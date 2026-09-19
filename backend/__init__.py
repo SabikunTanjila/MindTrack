@@ -1,0 +1,1 @@
+"""MindTrack backend package."""

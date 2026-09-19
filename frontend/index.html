@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MindTrack · Lifestyle patterns</title>
+  <link rel="stylesheet" href="static/styles/main.css">
+  <script src="static/services/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./" aria-label="MindTrack home"><span class="mark">m</span> MindTrack<span class="brand-dot">.</span></a><span class="environment"><span class="status-dot"></span> AI LAB / COLAB EDITION</span></header>
+  <main>
+    <section class="hero"><div><p class="eyebrow">A LITTLE CLARITY ABOUT YOUR EVERYDAY</p><h1>Your habits.<br><em>A different perspective.</em></h1><p class="intro">Explore how your daily routine compares with lifestyle patterns in our student dataset.</p></div><div class="hero-note"><span class="orbit" aria-hidden="true">◎</span><p>Small observations.<br>More thoughtful routines.</p><span>For students aged 18–24</span></div></section>
+    <nav class="tabs" aria-label="Dashboard sections"><button class="tab active" data-tab="assessment" aria-pressed="true">01 <span>Your assessment</span></button><button class="tab" data-tab="research" aria-pressed="false">02 <span>Behind the models</span></button></nav>
+    <div id="loading" class="notice" role="status">Loading trained models…</div>
+    <div id="error" class="notice error" role="alert" hidden></div>
+    <section id="assessment-panel" class="panel">
+      <div class="assessment-layout">
+        <article class="card form-card"><div class="section-heading"><div><p class="eyebrow">THE EVERYDAY DETAILS</p><h2>Tell us about your routine</h2></div><span class="step-count">9 inputs</span></div><p class="muted">Use a typical day where the field specifies daily hours. Study and activity use the dataset’s hour values; their time windows have not been verified.</p>
+          <form id="assessment-form"><fieldset id="fields" disabled><legend class="sr-only">Lifestyle assessment</legend><div id="numeric-fields" class="field-grid"></div><div class="divider"></div><div id="category-fields" class="category-grid"></div><div class="form-actions"><button id="analyze" class="primary" type="submit">Explore my patterns <span aria-hidden="true">↗</span></button><button id="reset" type="button" class="text-button">Use typical values</button></div></fieldset></form>
+          <p class="fine-print">This demo does not save your assessment. Results estimate dataset labels and are not a clinical assessment.</p>
+        </article>
+        <aside id="empty-result" class="card empty-result"><div class="pattern" aria-hidden="true"><i></i><i></i><i></i></div><p class="eyebrow">YOUR PERSONAL SNAPSHOT</p><h2>Connect the dots<br>in your daily routine.</h2><p>See a stress-label estimate, your lifestyle cluster, and how three different models compare.</p><div class="empty-footer"><span>01 / Enter your routine</span><span>02 / Explore the result</span></div></aside>
+        <article id="result" class="card result-card" hidden aria-live="polite"><p class="eyebrow">YOUR PERSONAL SNAPSHOT</p><div class="result-heading"><h2 id="risk-label"></h2><span class="pill">Dataset stress label</span></div><p id="primary-caption" class="muted"></p><div id="probabilities" class="probability-list"></div><p class="fine-print">Uncalibrated model probabilities; not clinical confidence.</p><div class="divider"></div><p class="eyebrow">LIFESTYLE PROFILE</p><h3 id="cluster-title"></h3><p id="cluster-description"></p><div class="divider"></div><p class="eyebrow">THREE PERSPECTIVES</p><div id="model-predictions"></div><p id="agreement" class="fine-print"></p></article>
+      </div>
+      <div id="details" hidden><div class="detail-grid"><article class="card"><p class="eyebrow">YOUR ROUTINE IN CONTEXT</p><h2>Alongside the dataset</h2><p class="muted">Your values compared with training medians. These comparisons do not explain what caused a prediction.</p><div class="table-wrap"><table><thead><tr><th>Input</th><th>You</th><th>Training median</th></tr></thead><tbody id="comparison-rows"></tbody></table></div></article><article class="card"><p class="eyebrow">SPACE TO REFLECT</p><h2>A few things to consider</h2><ul id="suggestions" class="suggestions"></ul><div id="result-notes" class="notice" hidden></div></article></div></div>
+    </section>
+    <section id="research-panel" class="panel" hidden><div class="card"><p class="eyebrow">TRANSPARENT BY DESIGN</p><h2>How the models performed</h2><p class="muted">Held-out test results. The primary model is selected using validation macro F1 before evaluating the test set.</p><p id="split-info" class="fine-print"></p><div class="table-wrap"><table><thead><tr><th>Model</th><th>Accuracy</th><th>Macro precision</th><th>Macro recall</th><th>Macro F1</th><th>OVR AUC</th></tr></thead><tbody id="metrics-rows"></tbody></table></div></div><div class="detail-grid"><article class="card"><p class="eyebrow">ACROSS THE DATASET</p><h2>Which inputs matter?</h2><p class="muted">Global permutation importance: the change in validation macro F1 when an input is shuffled. Correlated inputs can share importance.</p><div id="importance-bars"></div></article><article class="card"><p class="eyebrow">NATURAL LIFESTYLE GROUPS</p><h2>Clustering is a separate task</h2><p class="muted">K-Means groups five behavior inputs, without stress labels. Cluster count is selected by silhouette score; IDs do not indicate stress severity.</p><div class="table-wrap"><table><thead><tr><th>Clusters</th><th>Silhouette</th><th>Inertia</th></tr></thead><tbody id="cluster-rows"></tbody></table></div></article></div><article class="card methodology"><p class="eyebrow">WHAT THIS CAN TELL US</p><h2>Keep the context in view</h2><ul id="limitations"></ul></article></section>
+    <footer><span class="brand small">MindTrack.</span><p>An educational exploration of lifestyle and stress labels.<br>Built with K-Means · KNN · Logistic Regression · Random Forest.</p><span class="footer-note">Notice. Reflect. Learn.</span></footer>
+  </main>
+</body>
+</html>
