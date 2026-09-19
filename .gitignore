@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Frontend
+node_modules/
+dist/
+build/
+coverage/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+*.log
+MindTrack_Colab_Project.zip
+
+# Data and generated artifacts
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+models/*
+!models/.gitkeep
+reports/figures/*
+!reports/figures/.gitkeep
+reports/metrics/*
+!reports/metrics/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
