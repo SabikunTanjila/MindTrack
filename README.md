@@ -8,7 +8,7 @@ labels: **Low, Medium, High, Very High**.
 1. Open [Google Colab](https://colab.research.google.com/).
 2. Upload **MindTrack_Colab.ipynb** using **File → Upload notebook**.
 3. Connect to a hosted Python 3 CPU runtime and run cells in order.
-4. Upload **data/raw/mental_health_dataset.csv** when asked.
+4. Upload **mental_health_dataset.csv** when asked.
 5. Complete training/evaluation and open the dashboard inside the notebook.
 6. Download **MindTrack_results.zip** before disconnecting.
 
