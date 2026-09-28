@@ -76,12 +76,16 @@ users just because they are outside the old 18–24 cohort. The project now uses
 
 ```python
 from ml.config import AGE_MIN, AGE_MAX
-print(AGE_MIN, AGE_MAX)  # 0 120
+print(AGE_MIN, AGE_MAX)  # 13 120
 ```
 
-That means any realistic age year is accepted by the application logic, and the
-front-end form validation and backend request validation should both use the same
-`AGE_MIN` and `AGE_MAX` values rather than hard-coded `18` / `24` checks.
+That means adolescent and adult ages outside the original cohort are accepted by
+the application logic, and the front-end form validation and backend request
+validation use the same `AGE_MIN` and `AGE_MAX` values rather than hard-coded
+`18` / `24` checks. Because the available training file contains only ages
+18-24, age is retained for validation and reporting but excluded from the model
+features. This prevents unsupported age extrapolation; verified age-specific
+performance still requires representative labeled data from those age groups.
 
 ## External test dataset evaluation
 
@@ -97,6 +101,8 @@ This script:
 - loads the saved trained artifact if present
 - trains the project pipeline if no artifact is available yet
 - validates required columns and labels
+- normalizes equivalent category names used by the new dataset (for example,
+  `Postgraduate` to `Graduate` and `Academic` to `Education`)
 - applies the fitted preprocessing logic already learned during training
 - scores the model on the unseen external dataset
 - saves prediction results and classification metrics
