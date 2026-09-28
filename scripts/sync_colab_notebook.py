@@ -15,6 +15,8 @@ LOCAL_SOURCES = [
     *[str(path.relative_to(ROOT)).replace('\\', '/') for path in sorted((ROOT / 'ml').glob('*.py'))],
     *[str(path.relative_to(ROOT)).replace('\\', '/') for path in sorted((ROOT / 'backend').glob('*.py'))],
     *[str(path.relative_to(ROOT)).replace('\\', '/') for path in sorted((ROOT / 'tests').glob('*.py'))],
+    'frontend/index.html', 'frontend/src/services/app.js',
+    'frontend/src/styles/main.css',
 ]
 
 
