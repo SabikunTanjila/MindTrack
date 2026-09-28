@@ -1,0 +1,1001 @@
+Age,Academic_Level,Avg_Daily_Usage_Hours,Most_Used_Platform,Purpose_Of_Use,Daily_Unlocks,Study_Hours,Physical_Activity_Hours,Sleep_Hours_Per_Night,Stress_Level
+24,Undergraduate,10.5,Facebook,Academic,219,7.6,1.5,6.9,Very High
+21,Postgraduate,3.4,Instagram,Entertainment,235,2.9,0.5,8.1,Low
+22,Postgraduate,2.1,Instagram,Social,227,1.5,2.7,7.8,Low
+24,Undergraduate,1.3,Instagram,Browsing,133,6,1.4,4.7,Medium
+20,Postgraduate,8.1,LinkedIn,Entertainment,151,6.4,2.1,6.9,High
+22,Undergraduate,7.7,Facebook,Social,185,8.8,3,8.7,High
+22,Undergraduate,7,Facebook,Entertainment,174,6.2,0.2,6.1,Very High
+24,Undergraduate,3.6,Facebook,Entertainment,156,4.1,0.3,9.3,Low
+19,Postgraduate,5.3,YouTube,Entertainment,130,8.2,2.2,6.2,High
+20,Undergraduate,7.5,Facebook,Social,163,5.9,0.8,4.4,Very High
+24,Undergraduate,6.5,YouTube,Browsing,203,1.7,0.6,5.8,High
+20,Undergraduate,11.9,Instagram,Social,95,6.1,0.1,9.2,Very High
+20,Undergraduate,2.5,Instagram,Browsing,50,9.2,0.1,5.4,Medium
+22,Undergraduate,8.6,LinkedIn,Entertainment,235,4.6,2.3,8.7,High
+21,Undergraduate,5.4,Instagram,Academic,138,3.7,0.4,8.8,Low
+20,Undergraduate,5.7,LinkedIn,Entertainment,161,2.3,1.4,5.6,Medium
+23,Undergraduate,8.9,TikTok,Browsing,44,2.4,1.8,4,High
+22,Undergraduate,8.6,TikTok,Social,53,4.9,1.3,7.8,Medium
+19,Undergraduate,11.9,WhatsApp,Entertainment,86,6.4,0.1,5.4,Very High
+21,Undergraduate,2.4,LinkedIn,Social,171,1.7,2.4,8.2,Low
+23,Undergraduate,2.1,WhatsApp,Social,137,9.5,0,6.2,High
+23,Postgraduate,9,WhatsApp,Social,92,7.8,2.3,6.4,Very High
+19,Undergraduate,7.4,TikTok,Entertainment,45,6.3,2.7,8.2,Low
+21,Undergraduate,4,LinkedIn,Social,167,8.5,1.3,5.8,High
+22,Undergraduate,1.9,TikTok,Social,211,1.7,1.6,6.2,Low
+18,Undergraduate,1.9,WhatsApp,Entertainment,123,5.3,1.4,5.8,Low
+21,Undergraduate,10.8,LinkedIn,Social,29,6.7,1.2,5.7,Very High
+19,Undergraduate,3.1,WhatsApp,Entertainment,230,8.5,2.7,6.7,High
+23,Undergraduate,4.6,Facebook,Browsing,86,8.1,2.7,8.4,Low
+22,Undergraduate,3.5,LinkedIn,Browsing,171,3.5,1,5.7,Medium
+21,Undergraduate,4.9,LinkedIn,Browsing,24,9.5,1.8,6.6,Medium
+18,Undergraduate,1.8,WhatsApp,Social,214,2.1,2.8,7.5,Low
+18,Undergraduate,6.7,Facebook,Academic,205,8.9,2.9,5.1,Very High
+20,Undergraduate,1.7,YouTube,Academic,46,9.7,1.5,5.2,Medium
+20,Undergraduate,9.8,TikTok,Social,227,2.6,1.4,9.1,High
+24,Undergraduate,3.6,WhatsApp,Academic,132,7.5,0.8,7.8,Medium
+19,Undergraduate,6.9,LinkedIn,Entertainment,34,1.4,2.9,7,Low
+21,Undergraduate,10.7,TikTok,Academic,182,4.6,0.4,7.4,Very High
+21,Undergraduate,8.2,TikTok,Social,223,5.6,1.7,3.7,Very High
+24,Undergraduate,6.9,TikTok,Social,124,6.2,0.8,7.2,High
+23,Undergraduate,4.6,YouTube,Entertainment,200,9.4,0.8,6.6,Very High
+23,Postgraduate,4.7,Instagram,Browsing,63,7.1,1.2,6.8,Medium
+24,Postgraduate,8.4,WhatsApp,Social,45,5.3,3,5.7,Medium
+23,Undergraduate,11.9,Instagram,Entertainment,194,8.3,0.2,4,Very High
+20,Undergraduate,8.3,Instagram,Academic,181,9.6,1.7,4.7,Very High
+21,Postgraduate,7.1,Instagram,Academic,234,1.2,0.2,9.2,Medium
+24,Undergraduate,9,TikTok,Entertainment,114,9.8,0.5,6,Very High
+21,Undergraduate,6.1,Facebook,Entertainment,197,1.8,1.3,6.3,Medium
+18,Undergraduate,1.7,TikTok,Social,103,8.3,1.5,3.8,High
+20,Undergraduate,7.2,TikTok,Academic,159,3.5,0.8,3.7,Very High
+22,Undergraduate,11.5,LinkedIn,Entertainment,234,2.2,0.9,7.8,Very High
+20,Undergraduate,2.9,LinkedIn,Academic,151,5,0.3,6.7,Medium
+24,Undergraduate,8.6,Instagram,Entertainment,106,6.8,0.9,6.6,Very High
+22,Undergraduate,3.2,TikTok,Academic,195,4.4,2.9,5,Medium
+18,Undergraduate,6.9,Instagram,Browsing,202,1.5,2.8,8,Low
+24,Undergraduate,2.1,LinkedIn,Social,131,6.4,1,4.5,Medium
+19,Undergraduate,6,Facebook,Academic,148,9.1,1.7,4.6,Very High
+21,Undergraduate,9.3,WhatsApp,Browsing,108,4.4,2.7,6.3,High
+18,Postgraduate,4.8,Instagram,Academic,85,2.9,0,5.2,Medium
+21,Undergraduate,8.3,Facebook,Academic,177,5,2.4,5,Very High
+23,Undergraduate,9.7,WhatsApp,Browsing,150,1.4,2.8,7.4,Medium
+19,Undergraduate,11.2,YouTube,Academic,141,8.4,0.3,7.4,Very High
+19,Undergraduate,3.6,Instagram,Academic,168,8.4,0.5,8.4,Medium
+18,Undergraduate,5.4,Instagram,Social,236,6.3,2.9,6,High
+19,Undergraduate,2.7,YouTube,Browsing,103,4.2,1.6,3.9,Medium
+22,Undergraduate,11.9,YouTube,Browsing,196,8.2,0,5.1,Very High
+19,Undergraduate,11.2,Instagram,Entertainment,135,6,0.8,9.4,High
+21,Undergraduate,6.9,YouTube,Academic,233,8.4,1.3,7.1,Very High
+21,Undergraduate,10.3,TikTok,Social,232,6.7,2.1,7.8,Very High
+24,Undergraduate,6.7,WhatsApp,Academic,209,8.1,2.2,3.5,Very High
+21,Undergraduate,7.9,WhatsApp,Academic,244,6.4,3,6.6,Very High
+24,Undergraduate,2,WhatsApp,Entertainment,135,4.7,0.9,3.7,Medium
+21,Postgraduate,9.3,TikTok,Academic,57,9.6,1.6,6.9,Very High
+22,Undergraduate,2.4,YouTube,Social,162,5.9,1.6,9,Low
+24,Undergraduate,10.1,Facebook,Social,129,6.4,1.2,9.3,High
+20,Undergraduate,9.6,YouTube,Entertainment,199,3,0.5,6.7,Very High
+23,Undergraduate,8.8,Instagram,Academic,226,6.6,2.9,6.2,Very High
+18,Undergraduate,1.4,LinkedIn,Social,65,6.1,2.6,9.2,Low
+21,Undergraduate,4.3,WhatsApp,Academic,44,2.7,1.5,7.5,Low
+19,Undergraduate,3.9,YouTube,Academic,40,1.5,1.8,3.9,Low
+21,Undergraduate,5,Facebook,Academic,235,6.4,0.7,6.3,Very High
+19,Undergraduate,2,Instagram,Entertainment,140,7.9,1.6,4.9,Medium
+23,Undergraduate,11.3,TikTok,Academic,141,5.7,2.1,6.3,Very High
+23,Undergraduate,7.1,TikTok,Social,152,3,1.5,6.2,Medium
+23,Undergraduate,4.4,Facebook,Academic,89,7,3,7,Low
+19,Undergraduate,5.4,Instagram,Social,132,1.7,1.8,5.6,Low
+21,Undergraduate,5.9,WhatsApp,Academic,126,5,1.1,4.5,High
+23,Undergraduate,7.6,YouTube,Social,131,2.5,2.3,6.5,Medium
+22,Postgraduate,6.7,Instagram,Social,127,2.7,0.5,8.5,Low
+24,Undergraduate,11.1,TikTok,Academic,66,2.8,1.2,7.5,Medium
+19,Undergraduate,6.5,Facebook,Academic,234,4.5,1,5.5,Very High
+19,Undergraduate,11.9,Facebook,Social,215,1.5,1.3,9.1,High
+21,Undergraduate,10.4,YouTube,Browsing,110,4.6,2.3,9,Medium
+19,Undergraduate,3.3,Facebook,Entertainment,37,5.6,1.5,4.8,Low
+19,Undergraduate,11.2,Facebook,Browsing,168,5.3,2.4,3.7,Very High
+23,Undergraduate,2.3,Instagram,Browsing,239,4.4,1.7,7.9,Low
+21,Undergraduate,10,WhatsApp,Academic,246,8.6,1,8.5,Very High
+23,Undergraduate,5.2,YouTube,Entertainment,233,2.3,2.4,9.3,Low
+24,Postgraduate,10.7,Instagram,Browsing,123,5.6,0.7,8.8,High
+24,Undergraduate,10.5,WhatsApp,Academic,170,1.6,0.7,7.1,High
+23,Undergraduate,9.9,Instagram,Browsing,211,1.6,1.5,6.7,High
+24,Undergraduate,9.7,LinkedIn,Browsing,214,6.2,0.8,3.7,Very High
+21,Postgraduate,4.4,Instagram,Academic,59,6.1,0,5,High
+18,Undergraduate,1.9,Facebook,Academic,157,8.9,1.9,6.3,Medium
+23,Undergraduate,5.4,WhatsApp,Academic,108,6,1.5,7.3,Medium
+22,Postgraduate,2.9,YouTube,Entertainment,199,9.6,1.3,6.8,High
+22,Postgraduate,8.6,YouTube,Browsing,219,1.4,2.9,8,Medium
+19,Postgraduate,4.8,WhatsApp,Academic,222,1.9,1.7,5.2,Medium
+24,Undergraduate,11.7,Facebook,Social,80,1.4,2.6,6.9,Medium
+22,Undergraduate,8.1,TikTok,Browsing,211,2.7,0.4,4,Very High
+19,Undergraduate,10,Instagram,Social,24,5.9,1.7,6,High
+18,Postgraduate,2.5,Facebook,Entertainment,141,6.8,2.6,8,Low
+21,Undergraduate,10.5,LinkedIn,Academic,200,1.4,1.7,7.7,High
+21,Undergraduate,11.2,WhatsApp,Social,74,9.5,2.2,9.4,High
+21,Undergraduate,6.4,Instagram,Entertainment,56,8.6,1.1,5.2,Very High
+22,Undergraduate,7.7,YouTube,Academic,75,3.7,0.3,6.5,Medium
+18,Undergraduate,9.4,TikTok,Social,206,1.7,1.4,5.5,Very High
+22,Undergraduate,2.9,LinkedIn,Social,121,2.5,1.2,6.1,Low
+24,Undergraduate,6.5,YouTube,Entertainment,112,2.1,2.6,8.6,Low
+22,Undergraduate,5.4,WhatsApp,Academic,216,2.1,0.7,7.6,Medium
+18,Undergraduate,2.6,Instagram,Academic,92,5.7,2.9,8.8,Low
+18,Undergraduate,5,WhatsApp,Social,78,3.2,2.9,4.7,Low
+24,Undergraduate,1.7,Instagram,Social,21,4.2,0.7,8.7,Low
+18,Undergraduate,1.3,Facebook,Social,212,9.9,1,3.9,Very High
+18,Undergraduate,2.5,TikTok,Academic,123,7.2,2.7,8.8,Low
+21,Undergraduate,11.6,Facebook,Entertainment,207,9.5,2.9,5.5,Very High
+24,Undergraduate,7,Facebook,Entertainment,70,2.3,1.3,5.4,Medium
+20,Undergraduate,11.6,WhatsApp,Academic,49,4.4,1,6.6,High
+20,Undergraduate,5.8,TikTok,Browsing,30,6,1.6,9.1,Low
+18,Undergraduate,4.4,Instagram,Entertainment,239,1.7,2.1,3.8,High
+20,Undergraduate,6.6,Instagram,Social,127,1,0.8,5.6,Medium
+20,Undergraduate,5.8,LinkedIn,Browsing,95,7,2.2,8.6,Low
+18,Postgraduate,2.2,YouTube,Browsing,186,6.8,0.2,5.9,High
+20,Undergraduate,8,LinkedIn,Entertainment,109,4.7,0.1,4.7,Very High
+22,Postgraduate,3.4,LinkedIn,Browsing,224,5.4,1.2,6,High
+19,Undergraduate,7.8,Instagram,Browsing,142,4.7,1.1,5.8,High
+24,Undergraduate,8.2,WhatsApp,Entertainment,219,1.2,0.9,9,Medium
+19,Undergraduate,2.7,Facebook,Entertainment,210,4,1.5,8.1,Low
+18,Undergraduate,1.7,Facebook,Browsing,211,2.6,1,6.5,Low
+21,Undergraduate,9.6,Facebook,Social,208,1.9,0.6,9.4,Medium
+24,Undergraduate,6.1,TikTok,Academic,144,9.6,0.9,6.3,Very High
+18,Undergraduate,1.6,Instagram,Browsing,201,6.4,2.9,3.8,High
+21,Postgraduate,11.9,WhatsApp,Browsing,239,7.6,1.2,5.1,Very High
+19,Postgraduate,1.6,TikTok,Social,141,3.8,1.3,6.1,Low
+18,Postgraduate,8.6,YouTube,Browsing,113,4.5,1.7,4.4,Very High
+24,Undergraduate,11.8,WhatsApp,Browsing,220,3.1,3,9.2,High
+24,Undergraduate,3.6,LinkedIn,Academic,122,1.9,0.7,8.1,Low
+23,Postgraduate,2.6,WhatsApp,Academic,242,2.6,2,5.1,Medium
+22,Undergraduate,2.3,WhatsApp,Academic,205,8.2,2.1,7,Medium
+20,Undergraduate,4.3,Facebook,Entertainment,232,7.1,1.8,7.8,Medium
+21,Undergraduate,2.1,WhatsApp,Entertainment,203,5.9,0.3,9.1,Low
+23,Undergraduate,8.6,LinkedIn,Academic,181,5.3,2,8.8,Medium
+20,Postgraduate,1.7,LinkedIn,Academic,50,9.3,0.2,6.6,Medium
+20,Undergraduate,6.6,Instagram,Entertainment,71,1.7,1.8,8.1,Low
+18,Undergraduate,12,WhatsApp,Social,108,3.5,2.2,6.9,High
+20,Undergraduate,10,Facebook,Browsing,95,4.1,0.6,6.8,High
+22,Undergraduate,7.8,WhatsApp,Browsing,148,8,2.5,4.2,Very High
+24,Undergraduate,4.4,YouTube,Academic,202,9.9,0.1,4.3,Very High
+23,Postgraduate,7.9,YouTube,Social,41,3.2,2.5,6.7,Low
+20,Undergraduate,6.8,Facebook,Entertainment,59,8.9,1.4,5.1,Very High
+18,Undergraduate,5.7,Instagram,Academic,120,8.5,0.7,3.6,Very High
+22,Undergraduate,2.4,Instagram,Social,130,3,0.4,7.8,Low
+19,Postgraduate,10.8,LinkedIn,Social,148,4.6,2.9,3.7,Very High
+24,Undergraduate,5.9,LinkedIn,Social,84,4.7,0.2,7.1,Medium
+24,Postgraduate,3.1,TikTok,Entertainment,210,9.8,0.6,6.7,Very High
+23,Undergraduate,5,Facebook,Entertainment,201,2.6,1,9.3,Low
+24,Undergraduate,5.6,WhatsApp,Browsing,189,8.2,1.9,6.4,Very High
+20,Undergraduate,10.1,Facebook,Browsing,168,4,1.6,3.9,Very High
+18,Undergraduate,9.1,TikTok,Social,98,7.6,0.4,6.8,Very High
+24,Undergraduate,9.5,LinkedIn,Social,228,4.8,0.9,8.5,Very High
+24,Undergraduate,1.1,Facebook,Entertainment,41,6.2,0.7,9.5,Low
+19,Undergraduate,5.6,Facebook,Browsing,185,8.5,0.6,6.1,Very High
+19,Postgraduate,6.3,LinkedIn,Social,118,8.2,1.2,5.4,Very High
+21,Undergraduate,1.2,TikTok,Browsing,227,8.8,2.1,8.9,Low
+22,Undergraduate,3.9,LinkedIn,Browsing,27,1.5,0.7,4.6,Low
+20,Postgraduate,9.4,Instagram,Social,209,7.2,1.1,7.2,Very High
+24,Undergraduate,2.5,WhatsApp,Entertainment,194,2.3,1.2,5.9,Low
+24,Undergraduate,6.9,LinkedIn,Social,36,4.7,2.9,3.7,Medium
+18,Postgraduate,3.4,TikTok,Social,36,5.9,2.9,5.6,Low
+21,Undergraduate,1.1,YouTube,Browsing,109,4.6,2.4,5.1,Low
+22,Undergraduate,3.7,Instagram,Social,160,5.7,0.7,7.6,Medium
+21,Undergraduate,11.7,YouTube,Entertainment,164,10,0.2,9.2,Very High
+23,Undergraduate,9.8,LinkedIn,Social,185,2.2,1,5.1,Very High
+22,Undergraduate,11.6,Instagram,Entertainment,100,7.1,0.8,8.4,Very High
+24,Undergraduate,6.4,WhatsApp,Entertainment,97,4.6,1.5,3.8,High
+24,Postgraduate,2.2,LinkedIn,Browsing,192,2.2,2.3,6.7,Low
+22,Undergraduate,7,WhatsApp,Academic,25,2.4,2.6,3.9,Medium
+24,Undergraduate,6,Facebook,Academic,182,9.5,2.5,9.1,Medium
+20,Undergraduate,10.3,YouTube,Browsing,129,8.9,1.1,8.1,Very High
+22,Undergraduate,2.1,Instagram,Social,33,9.2,2.1,7.4,Low
+21,Undergraduate,6.4,WhatsApp,Browsing,91,9.9,0.9,8.4,High
+22,Undergraduate,2.7,TikTok,Entertainment,208,2.9,0.2,7.4,Low
+24,Undergraduate,4.6,WhatsApp,Academic,162,4.2,2.1,9.3,Low
+20,Undergraduate,9.1,TikTok,Browsing,73,7,0,7.8,High
+20,Postgraduate,6.2,LinkedIn,Social,46,5.4,1.2,9,Low
+23,Undergraduate,5.1,Instagram,Browsing,32,4.8,1,6.6,Low
+21,Postgraduate,5.3,WhatsApp,Academic,178,4.2,2.1,4.2,High
+19,Undergraduate,6.1,WhatsApp,Browsing,182,6.3,2.3,6.7,High
+19,Postgraduate,9.6,Instagram,Browsing,79,6.2,0.9,4.3,Very High
+22,Undergraduate,10.8,WhatsApp,Academic,25,2.5,2.4,7.1,Medium
+23,Undergraduate,11.5,TikTok,Entertainment,216,5.2,0.9,6.4,Very High
+18,Undergraduate,9.7,WhatsApp,Entertainment,233,6,1.3,7.2,Very High
+22,Undergraduate,4.5,YouTube,Academic,77,6.1,2.2,3.6,High
+23,Undergraduate,8.6,LinkedIn,Browsing,68,2.9,2.1,4.7,High
+21,Undergraduate,5.8,Facebook,Academic,170,7.7,3,6.4,High
+21,Undergraduate,3.8,TikTok,Entertainment,236,1.2,0.7,9.2,Low
+21,Undergraduate,10.2,YouTube,Social,181,4.2,2,5.8,Very High
+21,Undergraduate,1.4,LinkedIn,Browsing,45,8,1.8,6,Low
+21,Undergraduate,10.9,Instagram,Entertainment,66,6.1,2.7,7.8,High
+23,Undergraduate,6.1,TikTok,Browsing,24,3.4,0.5,7.1,Low
+23,Undergraduate,8,Facebook,Academic,237,7.3,2.3,5.3,Very High
+20,Undergraduate,8.3,LinkedIn,Social,39,6.1,1.7,6,High
+19,Postgraduate,10.8,Facebook,Academic,153,8.2,0.8,4.8,Very High
+24,Undergraduate,8,Instagram,Social,217,7.6,1.4,9.3,High
+21,Undergraduate,7.8,Instagram,Browsing,78,6.5,1,4.3,Very High
+18,Undergraduate,1.7,TikTok,Browsing,211,5.4,1.7,5.7,Medium
+24,Postgraduate,6.7,WhatsApp,Academic,165,2.2,2.7,3.7,High
+23,Undergraduate,2.7,Instagram,Social,151,3.4,1.7,4.8,Medium
+18,Undergraduate,9.1,LinkedIn,Social,36,4.8,1.9,8.2,Low
+18,Undergraduate,6.6,WhatsApp,Browsing,33,6.4,1.6,4.7,High
+18,Undergraduate,8.5,YouTube,Academic,225,5.6,0.2,4,Very High
+20,Undergraduate,1.5,Facebook,Social,32,3.6,0.7,6.3,Low
+23,Postgraduate,1.9,WhatsApp,Browsing,154,1.1,1.5,3.6,Low
+18,Postgraduate,8.9,Facebook,Entertainment,147,5.5,0.9,4,Very High
+21,Undergraduate,1.8,WhatsApp,Academic,63,3.6,0.5,8.3,Low
+22,Undergraduate,1.8,YouTube,Entertainment,138,7.6,1.5,8.1,Low
+18,Postgraduate,1.1,Instagram,Academic,162,1.2,1,9,Low
+20,Undergraduate,11.5,YouTube,Browsing,38,6.3,0.8,8.6,High
+24,Undergraduate,9.1,Instagram,Social,82,9.5,1.4,7.6,Very High
+23,Undergraduate,4.9,Instagram,Social,182,2.6,0.4,3.8,High
+20,Undergraduate,4.3,Facebook,Social,100,5.2,2.8,8.2,Low
+18,Undergraduate,4.8,LinkedIn,Academic,182,1.8,2.6,8.6,Low
+23,Undergraduate,9.5,YouTube,Browsing,166,6.6,2.1,8.3,High
+22,Postgraduate,8.3,WhatsApp,Entertainment,167,6,0.3,6.6,Very High
+18,Postgraduate,3,YouTube,Browsing,119,4.7,2.3,4.9,Low
+20,Undergraduate,2.9,Facebook,Entertainment,182,5.7,2.4,8.6,Low
+19,Undergraduate,2.1,Instagram,Academic,179,9.1,2.3,7.9,Low
+21,Postgraduate,8.3,Facebook,Academic,141,2.8,0.3,9.4,Medium
+24,Postgraduate,9.4,TikTok,Entertainment,195,1.2,1.9,4.4,Very High
+20,Undergraduate,3.9,TikTok,Entertainment,63,8.8,2.5,4.9,Medium
+23,Postgraduate,1.2,WhatsApp,Entertainment,123,6.2,1.7,4.8,Medium
+18,Postgraduate,1.9,Facebook,Browsing,171,9,1.9,8.3,Low
+21,Undergraduate,11.6,WhatsApp,Entertainment,80,6.4,1.4,4.6,Very High
+18,Undergraduate,4.2,WhatsApp,Academic,144,8.3,1.6,3.9,Very High
+23,Undergraduate,9.5,TikTok,Academic,164,4.9,0.1,9.5,High
+18,Undergraduate,7.9,WhatsApp,Social,90,7.7,1.9,3.6,Very High
+19,Undergraduate,5.2,TikTok,Entertainment,126,9.2,0.2,8.5,High
+21,Postgraduate,3.3,Instagram,Browsing,69,6.1,1.3,5.7,Low
+21,Undergraduate,2.3,Facebook,Browsing,84,2.6,0.9,8.5,Low
+23,Undergraduate,7.8,WhatsApp,Browsing,118,3.4,1.6,6.8,Medium
+24,Undergraduate,9.5,TikTok,Social,51,2.8,0.4,8.9,Low
+19,Undergraduate,8.1,YouTube,Academic,183,3.2,2.1,9.1,Low
+20,Postgraduate,6.8,WhatsApp,Browsing,160,3.8,2.4,3.6,Very High
+18,Undergraduate,1.5,LinkedIn,Academic,217,6,0.5,4,High
+22,Undergraduate,11.7,Instagram,Social,77,6.3,0.3,5,Very High
+18,Undergraduate,9.8,Instagram,Entertainment,147,4.8,0.4,7.5,Very High
+18,Undergraduate,4.2,YouTube,Entertainment,161,6.5,2.6,8.8,Low
+20,Undergraduate,11.8,TikTok,Entertainment,184,1.7,1.6,6.3,Very High
+18,Undergraduate,7.6,WhatsApp,Browsing,131,1.8,1.4,7.1,Medium
+19,Undergraduate,7.4,TikTok,Entertainment,226,2.5,0.3,4.6,Very High
+19,Undergraduate,9.2,Instagram,Browsing,87,5.7,1.9,8.3,Medium
+21,Undergraduate,9.9,TikTok,Social,59,2.9,2.6,9.3,Low
+23,Undergraduate,8.2,Instagram,Social,206,3.5,2.5,5.1,Very High
+24,Postgraduate,2.4,TikTok,Browsing,227,4.6,1.9,6.5,Medium
+22,Undergraduate,4.7,YouTube,Academic,239,8.3,0.2,4,Very High
+18,Undergraduate,11.2,Facebook,Entertainment,163,1.1,0.3,6.9,Very High
+18,Undergraduate,3.5,YouTube,Entertainment,209,6.8,0.1,6.5,High
+20,Undergraduate,5.1,YouTube,Entertainment,151,7,0.8,4.4,Very High
+23,Undergraduate,5.8,Facebook,Browsing,192,8.2,0.4,6.2,Very High
+19,Undergraduate,5.8,Facebook,Social,109,9.4,0.8,5.5,Very High
+22,Postgraduate,7.7,WhatsApp,Entertainment,47,1.2,1.2,6.6,Low
+21,Undergraduate,11.4,WhatsApp,Social,115,2.4,2.8,7,High
+19,Undergraduate,3.6,YouTube,Entertainment,213,9,1.8,3.6,Very High
+23,Undergraduate,2.3,YouTube,Entertainment,50,5.1,2.5,8.1,Low
+24,Postgraduate,3.2,Instagram,Browsing,22,6.1,2.1,7.8,Low
+21,Undergraduate,10.8,Instagram,Academic,155,7,0.3,5.7,Very High
+24,Undergraduate,8.1,WhatsApp,Browsing,43,7.1,2.2,3.8,Very High
+20,Undergraduate,4.1,LinkedIn,Entertainment,34,9.4,0.8,8,Low
+20,Undergraduate,10,LinkedIn,Entertainment,190,10,1.9,9.2,Very High
+18,Undergraduate,10.5,WhatsApp,Academic,178,7.5,1,4.9,Very High
+24,Postgraduate,10.3,Instagram,Social,220,3.6,3,5.4,Very High
+23,Undergraduate,11.1,Instagram,Social,64,8.9,0.8,4.6,Very High
+22,Undergraduate,3.8,LinkedIn,Entertainment,213,1.4,0.8,7,Low
+21,Undergraduate,9.3,TikTok,Social,27,3.1,2.8,4.4,Medium
+19,Undergraduate,6.1,TikTok,Entertainment,90,9.1,0.1,5.6,Very High
+23,Undergraduate,10.3,Instagram,Academic,127,3.3,2.1,7.7,Medium
+23,Undergraduate,9,TikTok,Academic,134,3,2.2,6.9,Medium
+20,Undergraduate,9.5,Facebook,Entertainment,122,2.2,2.5,5.8,High
+24,Undergraduate,8.2,WhatsApp,Academic,144,8.7,2.9,6,Very High
+18,Undergraduate,3,WhatsApp,Browsing,76,5.5,2.9,6.9,Low
+18,Undergraduate,7,Instagram,Browsing,227,7.1,0.2,3.5,Very High
+21,Undergraduate,11.8,YouTube,Academic,246,3.2,2.5,4,Very High
+20,Undergraduate,11.3,LinkedIn,Entertainment,49,7.8,1.9,8.8,High
+23,Undergraduate,1.5,Instagram,Entertainment,221,7.8,1.9,4,High
+22,Undergraduate,2.8,TikTok,Academic,249,3.8,0.4,7.7,Medium
+20,Postgraduate,2.4,LinkedIn,Social,165,4.7,2,9,Low
+21,Postgraduate,9,YouTube,Browsing,133,2.9,2.9,5.1,High
+21,Undergraduate,10,TikTok,Social,216,9.8,2.7,5.7,Very High
+20,Undergraduate,3.3,Facebook,Entertainment,136,6.8,1.3,6.9,Medium
+21,Undergraduate,6.6,TikTok,Entertainment,240,9.4,0.1,8.8,Very High
+20,Undergraduate,10.2,Facebook,Social,186,3.7,1.1,9.2,High
+19,Undergraduate,9.1,LinkedIn,Academic,79,8,2.5,7.9,High
+20,Undergraduate,7,Facebook,Social,117,7.9,2.1,4,Very High
+24,Undergraduate,7.5,LinkedIn,Social,190,7.2,1.4,7.5,Very High
+20,Undergraduate,6.6,LinkedIn,Browsing,145,9.7,0.2,6,Very High
+21,Undergraduate,4.3,LinkedIn,Browsing,192,4.5,1.3,6.3,Medium
+24,Undergraduate,7.2,LinkedIn,Social,170,2.2,1.4,3.8,Very High
+21,Undergraduate,8.6,LinkedIn,Social,216,7,2.8,4.6,Very High
+18,Undergraduate,10.6,TikTok,Entertainment,113,7.6,1.9,8.2,Very High
+18,Undergraduate,8,LinkedIn,Browsing,153,6.2,0.9,6.2,Very High
+24,Undergraduate,9.4,TikTok,Browsing,203,2.9,1.6,5.3,Very High
+19,Undergraduate,2.8,LinkedIn,Entertainment,141,5.5,0.2,5.8,Medium
+18,Undergraduate,6.1,Facebook,Academic,127,3.8,2.9,8.6,Low
+20,Undergraduate,1.1,LinkedIn,Browsing,23,4.8,1.1,8,Low
+21,Undergraduate,3.7,YouTube,Browsing,112,6.8,1.4,5.1,Medium
+18,Undergraduate,9,LinkedIn,Academic,170,7.7,1.1,4.2,Very High
+18,Undergraduate,11.9,LinkedIn,Browsing,25,3.1,2,5,High
+19,Undergraduate,2.1,Facebook,Browsing,51,4.6,2,9,Low
+24,Postgraduate,5.4,WhatsApp,Academic,125,3.4,2.1,7,Low
+24,Postgraduate,9.8,Facebook,Academic,165,2.8,0.8,6.7,Very High
+23,Undergraduate,3.2,YouTube,Social,34,8.1,0.9,7.1,Low
+19,Undergraduate,7.1,WhatsApp,Entertainment,187,9.2,0.4,5.7,Very High
+20,Undergraduate,9.1,Instagram,Entertainment,141,4.3,2,8.3,Medium
+24,Undergraduate,7.8,Instagram,Academic,115,7.8,0.1,6.6,Very High
+21,Postgraduate,3.1,YouTube,Academic,220,9.1,1.8,4.2,Very High
+19,Undergraduate,4.9,Facebook,Browsing,248,8.6,2.6,4.3,Very High
+18,Undergraduate,9.6,TikTok,Social,221,2.6,2.7,6.7,High
+21,Undergraduate,7.1,YouTube,Social,231,9.6,1.3,9.1,Very High
+21,Undergraduate,1.1,WhatsApp,Academic,25,4.4,1.4,5.4,Low
+18,Undergraduate,9.4,WhatsApp,Browsing,131,4.1,0.2,8.7,High
+19,Undergraduate,1.4,LinkedIn,Browsing,139,1.6,2,8.1,Low
+18,Undergraduate,9.2,Instagram,Entertainment,142,5.4,2.5,5,Very High
+23,Postgraduate,3.2,WhatsApp,Entertainment,210,2,0.7,3.7,High
+21,Postgraduate,11.5,YouTube,Browsing,86,3.2,1.3,4.1,Very High
+22,Undergraduate,5,WhatsApp,Entertainment,125,3.9,2.5,7.9,Low
+22,Undergraduate,4.6,YouTube,Academic,158,8.3,2.6,4.7,High
+20,Undergraduate,2.6,TikTok,Browsing,62,8.9,0.7,5.7,Medium
+24,Undergraduate,4.4,LinkedIn,Entertainment,164,3.7,1.7,6.5,Medium
+18,Undergraduate,10.6,Instagram,Social,115,8.7,0.6,7.9,Very High
+18,Undergraduate,12,WhatsApp,Browsing,151,8.7,0.3,4.2,Very High
+20,Undergraduate,5.1,YouTube,Browsing,210,7.9,2.7,5.9,High
+20,Undergraduate,5.9,Facebook,Social,215,2.3,2.5,6.4,Medium
+20,Undergraduate,8.9,Instagram,Academic,100,7.2,2.3,6.7,High
+21,Undergraduate,10.7,TikTok,Social,60,9.5,0.1,8.4,Very High
+23,Postgraduate,7.5,YouTube,Browsing,230,7.1,2.5,4.5,Very High
+18,Undergraduate,5.3,LinkedIn,Academic,152,4,1.3,8.3,Low
+21,Undergraduate,5.5,LinkedIn,Entertainment,179,5.5,1,7.7,Medium
+20,Postgraduate,8.7,TikTok,Entertainment,233,6.8,1.6,6.8,Very High
+18,Undergraduate,1,TikTok,Entertainment,217,5.6,0.3,7.7,Low
+21,Postgraduate,7.8,LinkedIn,Browsing,54,2.1,2.3,6,Low
+23,Undergraduate,4.9,WhatsApp,Social,41,3.8,1.7,4.3,Medium
+21,Undergraduate,9.7,WhatsApp,Academic,212,8.2,0.6,7.5,Very High
+23,Undergraduate,2,YouTube,Entertainment,231,8.8,0.6,6.6,High
+20,Undergraduate,7.5,Facebook,Academic,169,2.2,0.6,7.3,Medium
+23,Undergraduate,6.3,YouTube,Browsing,131,9.6,0.2,5.5,Very High
+18,Undergraduate,8.1,Facebook,Entertainment,30,4,1.8,8.9,Low
+20,Undergraduate,1.7,TikTok,Browsing,224,7,2.5,7,Medium
+18,Undergraduate,7.4,Instagram,Social,22,7.8,0.1,4,Very High
+22,Postgraduate,7.2,YouTube,Browsing,156,8.3,0.1,6.2,Very High
+19,Postgraduate,7.2,YouTube,Browsing,79,9.5,1.7,8,High
+23,Undergraduate,7.6,Facebook,Social,95,3.8,2.5,8.3,Low
+19,Undergraduate,8.4,TikTok,Academic,106,8.7,1,6.5,Very High
+19,Undergraduate,9.9,TikTok,Social,33,2.2,1,8.9,Low
+23,Undergraduate,4,Facebook,Social,244,7.3,1.8,5.1,Very High
+20,Postgraduate,10.1,TikTok,Browsing,37,7.7,0.8,6,Very High
+22,Undergraduate,6.5,LinkedIn,Academic,132,7.1,0.1,8.9,Medium
+18,Undergraduate,1.8,WhatsApp,Entertainment,92,3.3,2.2,8.9,Low
+21,Undergraduate,1.6,LinkedIn,Social,42,8.9,1.9,7.6,Low
+18,Undergraduate,4.7,Instagram,Academic,221,2.5,1.7,8.7,Low
+21,Undergraduate,9.6,YouTube,Social,102,1.5,2.2,4,High
+18,Postgraduate,8.8,Instagram,Social,144,7.5,2,8.7,High
+23,Undergraduate,9.7,YouTube,Social,194,5.3,0.6,5.4,Very High
+22,Undergraduate,6.7,WhatsApp,Social,88,8.6,1.1,4.6,Very High
+21,Undergraduate,5.8,TikTok,Browsing,66,4.5,0.4,4.9,High
+24,Postgraduate,2.6,LinkedIn,Academic,135,2.5,0.4,6,Low
+20,Postgraduate,4.6,Facebook,Academic,234,8.5,2,5,Very High
+18,Undergraduate,5.8,LinkedIn,Academic,49,5.9,2.6,5.4,Medium
+18,Undergraduate,2,WhatsApp,Social,44,2.7,2.9,4.3,Low
+21,Undergraduate,3.4,Instagram,Browsing,175,7.5,1.9,5.3,High
+20,Undergraduate,7.6,Facebook,Social,245,5.6,0.6,6.9,Very High
+20,Postgraduate,9.1,TikTok,Social,131,6.4,0.3,6.2,Very High
+23,Undergraduate,12,WhatsApp,Academic,44,5.1,2.4,5.6,Very High
+24,Undergraduate,11.3,Facebook,Social,93,8.5,1.7,8,Very High
+23,Undergraduate,8.1,WhatsApp,Entertainment,225,8.5,1.9,8.9,Very High
+23,Undergraduate,5.6,WhatsApp,Social,77,7.4,2.3,8,Low
+23,Undergraduate,8,TikTok,Entertainment,113,1.9,2.1,5.5,Medium
+23,Undergraduate,9.6,YouTube,Social,138,8.5,2.5,8,Very High
+23,Undergraduate,2.3,Facebook,Browsing,146,7,0.2,4.4,High
+22,Undergraduate,5.5,TikTok,Browsing,188,7.3,2.2,4.3,Very High
+20,Undergraduate,10.2,WhatsApp,Academic,44,4.3,2.6,5.6,High
+23,Undergraduate,5.2,TikTok,Social,97,8.9,0.9,8.3,Medium
+20,Undergraduate,7.3,YouTube,Entertainment,118,7.5,1.9,5,Very High
+20,Undergraduate,7.5,LinkedIn,Entertainment,135,2,0.9,3.9,High
+19,Undergraduate,3,Facebook,Social,67,4.7,2.9,4.3,Low
+22,Undergraduate,5,YouTube,Entertainment,245,9,0.1,8.7,Very High
+23,Undergraduate,4.7,Instagram,Browsing,29,1.4,1.7,7.3,Low
+18,Undergraduate,1.3,Facebook,Entertainment,118,9.7,0.5,5,High
+21,Undergraduate,1.3,YouTube,Academic,222,7.1,2.1,6.8,Medium
+24,Postgraduate,10.1,WhatsApp,Browsing,30,6.7,0.5,6.7,Very High
+18,Undergraduate,4,Facebook,Browsing,104,3.4,0.7,7.4,Low
+22,Undergraduate,6.7,Facebook,Browsing,168,3.2,1.5,4.9,High
+21,Undergraduate,4.3,TikTok,Social,233,9.5,2.7,8.7,Medium
+22,Undergraduate,11.3,WhatsApp,Social,192,3.7,0.6,5.4,Very High
+20,Undergraduate,3.9,Instagram,Browsing,154,8,0.4,7.7,Medium
+21,Undergraduate,5.7,LinkedIn,Social,228,4.5,2.3,3.6,Very High
+20,Undergraduate,10.6,YouTube,Entertainment,211,2.3,1.5,5.7,Very High
+18,Undergraduate,10.3,TikTok,Social,145,1.1,2.7,5.6,High
+18,Undergraduate,3,YouTube,Social,83,5.9,0.4,6.8,Low
+21,Undergraduate,9.8,Instagram,Browsing,21,9.8,1.9,3.9,Very High
+21,Undergraduate,6,Instagram,Academic,95,4.3,0.7,8.2,Low
+23,Undergraduate,6.3,Facebook,Academic,140,4.2,0.5,4.8,High
+22,Undergraduate,2.5,Instagram,Academic,61,4.1,2.1,7.6,Low
+23,Undergraduate,1.9,YouTube,Entertainment,229,5.7,1.8,8.3,Low
+22,Undergraduate,9,WhatsApp,Social,73,5,2.3,6.9,Medium
+23,Undergraduate,6.5,WhatsApp,Academic,94,8.9,0.9,7.9,High
+20,Undergraduate,5.8,Facebook,Browsing,35,5.5,1.3,7.5,Low
+21,Postgraduate,9,LinkedIn,Academic,37,5.6,1.2,5.6,High
+18,Undergraduate,9.4,YouTube,Academic,246,2.2,3,8.4,Medium
+22,Undergraduate,2.7,YouTube,Social,206,9.8,0.9,5.3,Very High
+22,Undergraduate,7.7,Instagram,Social,109,3.2,0.9,6.9,Medium
+18,Undergraduate,2.5,YouTube,Social,163,1.7,1.1,8,Low
+23,Undergraduate,9.3,TikTok,Entertainment,25,7,1.7,5.8,High
+22,Undergraduate,8.2,LinkedIn,Entertainment,204,6.4,0.8,5.3,Very High
+24,Postgraduate,11.5,Instagram,Academic,127,4.7,2.7,6.3,Very High
+20,Undergraduate,1.8,TikTok,Social,194,4.8,0.8,8.4,Low
+21,Postgraduate,1.6,Facebook,Academic,67,8.1,2.7,9.1,Low
+18,Undergraduate,4.1,WhatsApp,Browsing,61,2.8,0.3,6.8,Low
+21,Undergraduate,3.9,Facebook,Browsing,95,8.4,2,7.5,Low
+24,Undergraduate,3.7,WhatsApp,Social,207,6.8,2.7,8.9,Low
+22,Postgraduate,11,Facebook,Social,96,4.8,0.5,4.1,Very High
+22,Undergraduate,3.7,YouTube,Browsing,151,5.1,2.9,4.9,Medium
+24,Postgraduate,4,TikTok,Social,149,3.3,1.4,7.8,Low
+18,Undergraduate,9.4,WhatsApp,Entertainment,237,7.8,2.8,8.4,Very High
+20,Undergraduate,5.9,Instagram,Entertainment,78,5.6,2,8.6,Low
+19,Postgraduate,9.5,TikTok,Social,174,3.9,0.9,6,Very High
+18,Undergraduate,1.7,Instagram,Browsing,46,6.4,0.6,4,Medium
+19,Undergraduate,6.4,TikTok,Academic,98,10,0.9,6.1,Very High
+24,Undergraduate,1.4,TikTok,Social,91,4.9,0.3,4.9,Low
+23,Postgraduate,1.7,Facebook,Social,26,9.3,0.4,5.2,Medium
+19,Postgraduate,11,WhatsApp,Academic,210,4.1,0.3,8.1,Very High
+20,Undergraduate,2.5,WhatsApp,Social,130,1.5,1.3,4,Low
+23,Undergraduate,6.9,TikTok,Academic,138,2.8,2.4,8.5,Low
+19,Postgraduate,5.5,YouTube,Browsing,193,4.8,0.4,6.1,High
+24,Undergraduate,4.8,YouTube,Entertainment,82,3,0.4,7.1,Low
+23,Undergraduate,10.9,Instagram,Browsing,143,1,1.9,4,Very High
+24,Postgraduate,1.2,Instagram,Entertainment,31,9.2,0.6,5.5,Medium
+19,Undergraduate,8.3,Facebook,Academic,160,8.6,0.3,4,Very High
+24,Undergraduate,11.6,TikTok,Entertainment,62,7.7,0.5,9.3,High
+20,Undergraduate,7.2,Instagram,Browsing,36,2.5,2.8,8.3,Low
+19,Postgraduate,11.3,Instagram,Entertainment,82,2.1,2.5,6.3,High
+19,Postgraduate,1.6,LinkedIn,Academic,228,1.6,1.1,4.8,Medium
+19,Postgraduate,5.6,TikTok,Entertainment,139,7.5,2,9.1,Low
+18,Undergraduate,3.9,Facebook,Social,55,9.4,1.6,5.6,Medium
+18,Postgraduate,9,Instagram,Browsing,232,4.9,2,4.5,Very High
+18,Postgraduate,11.8,Facebook,Social,27,2.1,2,6.9,Medium
+20,Undergraduate,3.8,WhatsApp,Academic,88,5.6,1.9,9.2,Low
+23,Postgraduate,8.2,Facebook,Entertainment,109,4.1,0.8,3.5,Very High
+24,Undergraduate,3.2,YouTube,Social,227,4.4,0.1,4.9,High
+22,Undergraduate,7.2,YouTube,Social,55,6.6,1.4,9.1,Low
+19,Undergraduate,6.1,Facebook,Entertainment,47,7.5,2.7,4.5,High
+24,Undergraduate,11.7,YouTube,Entertainment,137,2,1.7,4.2,Very High
+19,Undergraduate,7.7,WhatsApp,Browsing,112,1.3,2.5,6.9,Low
+20,Undergraduate,4.8,TikTok,Social,194,9.9,3,8.7,Medium
+19,Undergraduate,2.3,YouTube,Social,95,3.1,0.5,6.4,Low
+18,Undergraduate,2.7,YouTube,Academic,120,1.5,2.1,9.5,Low
+22,Undergraduate,3.5,Facebook,Browsing,177,2.7,2,7.6,Low
+21,Undergraduate,3.8,WhatsApp,Academic,170,1.4,2.9,3.9,Medium
+19,Undergraduate,10.4,TikTok,Social,163,4.5,3,9.5,Medium
+24,Undergraduate,7.2,Facebook,Academic,33,8.2,2.1,5.9,High
+18,Undergraduate,6.8,Facebook,Social,221,4.1,0.7,5.2,Very High
+21,Undergraduate,2.3,LinkedIn,Social,90,5,2.4,6.8,Low
+22,Postgraduate,10.5,WhatsApp,Academic,199,7.1,0.3,5.3,Very High
+21,Undergraduate,9,TikTok,Academic,143,5.6,2.3,4,Very High
+18,Undergraduate,1.7,WhatsApp,Entertainment,144,8.8,2.7,3.5,High
+23,Undergraduate,8.8,TikTok,Entertainment,56,8.8,1.1,6.2,Very High
+23,Postgraduate,7,WhatsApp,Entertainment,48,1.1,1.9,8.5,Low
+21,Undergraduate,1.9,Facebook,Social,214,8,1.3,6.9,Medium
+20,Postgraduate,6,Facebook,Academic,162,5.1,1.3,9.5,Low
+24,Undergraduate,6.3,Instagram,Browsing,247,9.9,0.9,5.2,Very High
+24,Postgraduate,2.8,YouTube,Social,194,5.3,2.3,5.2,Medium
+21,Undergraduate,11.4,LinkedIn,Browsing,193,9.9,2.8,4.5,Very High
+19,Postgraduate,10.3,WhatsApp,Academic,199,7.8,2.8,4.5,Very High
+19,Undergraduate,8.4,LinkedIn,Social,38,3.2,0.5,5.2,High
+24,Undergraduate,6.1,Instagram,Browsing,224,5.8,2.6,8.3,Medium
+24,Undergraduate,5.5,YouTube,Browsing,125,9.9,2.2,8.9,Medium
+23,Undergraduate,8.2,WhatsApp,Entertainment,40,8.7,0.8,9.4,Medium
+20,Undergraduate,7,TikTok,Entertainment,83,1.9,0.2,4.9,High
+18,Postgraduate,1.7,YouTube,Entertainment,184,7.4,0.8,8.8,Low
+19,Postgraduate,6.6,Facebook,Social,46,4.1,2.7,5.5,Low
+24,Undergraduate,9.9,Instagram,Academic,74,1.1,1.9,4.2,High
+23,Undergraduate,6.1,YouTube,Academic,48,4.6,2.2,8.7,Low
+22,Undergraduate,1.6,YouTube,Entertainment,167,3.1,0.8,7.3,Low
+23,Undergraduate,9.6,Facebook,Entertainment,44,8.4,2.2,4.5,Very High
+19,Undergraduate,3.2,WhatsApp,Entertainment,89,4,0.1,6.1,Low
+19,Undergraduate,3.8,TikTok,Browsing,82,8.4,1.1,5.2,High
+23,Undergraduate,2.8,Facebook,Entertainment,183,1,1.9,7.9,Low
+18,Undergraduate,4.6,TikTok,Browsing,149,3.8,0.4,6.2,Medium
+21,Undergraduate,9.3,WhatsApp,Academic,169,3.2,2.5,9.4,Medium
+19,Undergraduate,6.7,YouTube,Social,243,3.1,0.7,3.8,Very High
+23,Undergraduate,3.3,TikTok,Social,35,1.6,2,5.6,Low
+24,Undergraduate,10.7,Instagram,Social,165,2.7,1.2,6.4,Very High
+23,Postgraduate,10.7,Instagram,Social,216,6,1.8,6.5,Very High
+20,Undergraduate,10.6,Facebook,Browsing,201,3.6,0.3,5.4,Very High
+21,Undergraduate,3.6,WhatsApp,Browsing,119,4.8,0.1,7.9,Low
+22,Undergraduate,6,Facebook,Entertainment,49,4.4,2.7,8.7,Low
+18,Undergraduate,11.8,Facebook,Browsing,64,8.9,0.8,9.1,Very High
+22,Postgraduate,9.5,LinkedIn,Entertainment,38,9.1,2.5,8.3,High
+21,Undergraduate,1.3,Facebook,Entertainment,234,5.4,3,8.6,Low
+21,Undergraduate,1.7,LinkedIn,Social,53,4,0.6,6.8,Low
+21,Undergraduate,6.1,Instagram,Browsing,160,2,0.8,8.5,Low
+22,Postgraduate,11,Instagram,Browsing,190,9.6,2,5.3,Very High
+24,Postgraduate,6.9,Facebook,Entertainment,81,1.5,2.9,5.9,Low
+21,Undergraduate,6.5,Instagram,Entertainment,137,3.7,2.7,5.4,Medium
+23,Undergraduate,2.2,WhatsApp,Academic,240,3.7,1.5,6.3,Medium
+22,Undergraduate,8.2,LinkedIn,Academic,119,3.9,2.4,5.2,High
+21,Postgraduate,10,LinkedIn,Entertainment,41,2.5,0.4,9.3,Low
+23,Undergraduate,5.2,Facebook,Academic,199,8,2.9,5.4,Very High
+24,Postgraduate,9.5,Instagram,Academic,199,2.1,2.9,4.1,Very High
+20,Undergraduate,11.6,TikTok,Entertainment,130,6.7,0.5,6.7,Very High
+24,Undergraduate,3.2,LinkedIn,Entertainment,183,2.1,0.9,3.8,Medium
+21,Undergraduate,6.8,Facebook,Browsing,92,1.6,0.3,4.2,High
+22,Undergraduate,4.2,Facebook,Entertainment,166,9.2,0.8,4.8,Very High
+19,Undergraduate,9.7,WhatsApp,Entertainment,57,2.7,2.4,6.3,Medium
+21,Undergraduate,7.4,YouTube,Social,89,8.4,1.1,6.1,Very High
+19,Undergraduate,8,YouTube,Browsing,135,5.9,0.3,8.3,High
+23,Undergraduate,9.8,LinkedIn,Browsing,98,1.7,1,7.9,Medium
+20,Undergraduate,5.4,WhatsApp,Browsing,204,9.6,2.9,6.1,Very High
+18,Undergraduate,11.1,WhatsApp,Social,167,3.2,1.9,5.5,Very High
+24,Postgraduate,6.9,WhatsApp,Entertainment,28,8.7,1.2,5.4,High
+20,Postgraduate,2.7,LinkedIn,Browsing,51,2.5,0.5,8.1,Low
+21,Postgraduate,8.7,YouTube,Browsing,151,8.7,3,3.8,Very High
+19,Postgraduate,9.7,WhatsApp,Academic,69,1.1,2.5,3.6,High
+24,Undergraduate,4.5,Instagram,Browsing,101,5.6,0.8,8.3,Low
+19,Undergraduate,10.4,Facebook,Entertainment,24,7.9,0.2,6.4,Very High
+22,Undergraduate,11,Facebook,Entertainment,167,9.4,0.2,4.3,Very High
+19,Undergraduate,4,TikTok,Academic,106,9.2,0.4,4.9,Very High
+22,Undergraduate,11.8,TikTok,Browsing,145,8.4,1.7,9.1,Very High
+23,Postgraduate,2.5,LinkedIn,Browsing,94,9,2.8,8.7,Low
+24,Undergraduate,3.2,LinkedIn,Browsing,184,2.8,1.5,7.8,Low
+24,Undergraduate,3,Facebook,Social,41,3.6,2.5,6.4,Low
+18,Undergraduate,10.8,Instagram,Browsing,205,3.6,1.3,6.6,Very High
+21,Undergraduate,8.2,YouTube,Entertainment,87,4.4,2.1,9.4,Low
+22,Undergraduate,2.7,YouTube,Entertainment,240,4.5,2.2,9.3,Low
+18,Undergraduate,5.8,LinkedIn,Social,63,5.9,0.5,4.8,High
+19,Postgraduate,7.8,Instagram,Social,53,2.4,1.1,8.4,Low
+19,Undergraduate,1.9,LinkedIn,Browsing,96,7.2,1.9,4.7,Medium
+18,Undergraduate,10.7,YouTube,Academic,61,2.5,0.2,4.8,Very High
+24,Postgraduate,9.8,LinkedIn,Social,156,3.8,1.1,7.6,High
+19,Postgraduate,6.6,WhatsApp,Social,125,5.5,1.6,5.9,High
+23,Postgraduate,11.6,LinkedIn,Browsing,114,8.2,3,9.1,High
+23,Postgraduate,5.6,Facebook,Browsing,154,7.7,1.4,4,Very High
+18,Undergraduate,11.8,LinkedIn,Social,87,6.8,2.4,6.6,Very High
+22,Undergraduate,8.3,Facebook,Academic,166,2.4,1.3,9,Medium
+22,Undergraduate,8,Instagram,Social,241,5.9,2.4,8.9,High
+18,Undergraduate,2.8,YouTube,Browsing,178,1.8,1.8,4.4,Low
+22,Undergraduate,10.7,TikTok,Browsing,147,4.4,2.7,5.7,Very High
+24,Undergraduate,5.7,TikTok,Social,182,4.7,1.2,7.2,Medium
+24,Undergraduate,2.8,YouTube,Academic,204,1.4,1.8,4.5,Medium
+22,Undergraduate,1.1,TikTok,Social,104,3.5,1.9,9.3,Low
+23,Undergraduate,7.2,LinkedIn,Social,208,9.6,1.3,9,Very High
+22,Undergraduate,6.8,Instagram,Browsing,178,9.6,0.4,4.5,Very High
+24,Undergraduate,8.9,Instagram,Academic,102,4.2,0.3,4.2,Very High
+20,Undergraduate,10.8,YouTube,Entertainment,114,1.4,0.1,4,Very High
+21,Postgraduate,1.9,TikTok,Academic,200,2.6,2.6,9,Low
+19,Undergraduate,9,LinkedIn,Social,51,4.5,0.7,4.7,Very High
+20,Undergraduate,3.1,Instagram,Social,85,9.5,0.6,6,High
+22,Undergraduate,10.4,Instagram,Social,206,2.3,2.2,6.2,Very High
+23,Postgraduate,10,WhatsApp,Academic,135,7.9,1,7.1,Very High
+18,Undergraduate,6.9,WhatsApp,Browsing,157,2,1.5,3.9,High
+22,Undergraduate,8.8,Instagram,Social,149,9.8,0.5,4.9,Very High
+23,Undergraduate,4.5,YouTube,Social,213,4.4,2.9,9.1,Low
+21,Undergraduate,6.2,Facebook,Academic,79,8,2.6,9,Low
+22,Postgraduate,10,Facebook,Entertainment,235,4.1,2.6,8.2,High
+24,Undergraduate,6.1,LinkedIn,Entertainment,36,6.6,1.2,3.6,High
+18,Undergraduate,4.9,Instagram,Browsing,115,2.7,2.3,5.5,Low
+23,Postgraduate,6.4,Instagram,Browsing,163,2.3,0.4,7.3,Medium
+23,Postgraduate,10.1,Instagram,Social,35,9.4,0,5.2,Very High
+23,Undergraduate,4.7,YouTube,Academic,65,9.3,0.1,9,Medium
+21,Postgraduate,2.9,WhatsApp,Social,186,9,1.8,7.3,Medium
+22,Undergraduate,8.8,Instagram,Browsing,178,6.6,1.4,3.9,Very High
+21,Undergraduate,10.1,Instagram,Academic,126,8.3,1.6,9,High
+19,Undergraduate,2.1,TikTok,Academic,107,1.6,0,9.2,Low
+19,Undergraduate,3.6,YouTube,Browsing,148,4,1.3,4,High
+22,Undergraduate,2.6,LinkedIn,Entertainment,158,3.8,2.2,6.7,Low
+24,Postgraduate,4.8,Instagram,Entertainment,138,6.7,1.3,5.3,High
+21,Postgraduate,6,TikTok,Academic,104,4.2,2.2,5.9,Medium
+18,Undergraduate,9.2,Facebook,Social,23,2.3,0.7,4.6,High
+23,Postgraduate,8.2,LinkedIn,Entertainment,90,6.4,2.4,7,Medium
+23,Undergraduate,7.8,Instagram,Social,173,8.3,1.8,9.2,High
+22,Undergraduate,4.9,Instagram,Entertainment,130,4.4,0.6,6.5,Medium
+24,Undergraduate,10.3,TikTok,Entertainment,69,2.2,0.7,4,Very High
+19,Undergraduate,6.2,YouTube,Social,159,2.8,1.9,7.2,Low
+19,Postgraduate,11.8,Instagram,Browsing,114,3.1,2.5,5.5,Very High
+23,Postgraduate,8,Facebook,Entertainment,228,3.7,1.2,8.6,High
+22,Undergraduate,2.4,Instagram,Entertainment,244,6.8,0.8,6.1,High
+21,Undergraduate,8.4,Facebook,Social,222,6.4,2.6,4.7,Very High
+19,Undergraduate,4.6,LinkedIn,Browsing,111,7.3,2,4.6,High
+21,Undergraduate,8.5,LinkedIn,Entertainment,243,4.3,1.3,8.1,High
+24,Postgraduate,1.8,WhatsApp,Entertainment,84,8.4,1.5,5.1,Medium
+19,Undergraduate,2.9,WhatsApp,Browsing,66,2.8,0.6,8.1,Low
+19,Undergraduate,10.4,Facebook,Entertainment,239,5.2,1.9,4.7,Very High
+20,Undergraduate,3.5,YouTube,Browsing,200,8.2,1.1,5.4,Very High
+19,Undergraduate,10.2,Instagram,Browsing,125,2.6,3,6.3,High
+18,Undergraduate,4.1,Instagram,Social,218,2,1.4,9.2,Low
+22,Undergraduate,8.1,WhatsApp,Academic,149,9,1.5,9.1,High
+22,Undergraduate,8.6,Facebook,Browsing,125,4.1,1.7,4.7,Very High
+21,Undergraduate,6.6,Instagram,Social,43,7.2,2.8,5.6,Medium
+24,Postgraduate,4.4,Instagram,Academic,23,1.2,2.4,4.4,Low
+19,Undergraduate,3.3,YouTube,Entertainment,127,7.2,1.4,6.6,Medium
+18,Undergraduate,1.4,TikTok,Academic,38,3.8,2.2,6.3,Low
+21,Postgraduate,4.3,WhatsApp,Browsing,173,1.5,1.8,8.9,Low
+20,Undergraduate,8.2,WhatsApp,Browsing,222,6.5,1.5,9.1,High
+21,Postgraduate,11.3,TikTok,Browsing,59,3.2,0.6,5.8,Very High
+21,Undergraduate,10.6,Instagram,Browsing,69,4.5,1.4,6.5,High
+19,Undergraduate,9.4,YouTube,Browsing,190,1.7,0.7,8.9,Medium
+20,Undergraduate,9.7,YouTube,Social,94,2.3,2.7,8.3,Low
+21,Undergraduate,8.3,WhatsApp,Browsing,214,3.7,1,3.5,Very High
+18,Undergraduate,3.9,YouTube,Social,31,1.8,2.9,5.4,Low
+18,Undergraduate,11,LinkedIn,Entertainment,214,9.2,1.6,6,Very High
+22,Undergraduate,8.4,TikTok,Browsing,46,1.1,1.9,4.9,Medium
+20,Undergraduate,7.2,Instagram,Browsing,132,5.4,1.6,4.7,Very High
+20,Undergraduate,2.2,LinkedIn,Academic,201,2.1,0.4,3.7,Medium
+22,Postgraduate,5.9,TikTok,Entertainment,213,3.8,1.1,7.4,Medium
+21,Postgraduate,6.1,Facebook,Browsing,68,9.3,0.3,5.1,Very High
+20,Postgraduate,10.5,WhatsApp,Browsing,163,2.5,1.9,3.8,Very High
+18,Undergraduate,7,YouTube,Entertainment,149,9.7,1.3,4.9,Very High
+18,Undergraduate,5.2,Facebook,Social,79,2.9,2.3,8.3,Low
+19,Undergraduate,11.7,YouTube,Browsing,201,7.7,0.7,8.6,Very High
+20,Undergraduate,2.2,LinkedIn,Academic,49,5.9,0.5,6.4,Low
+21,Undergraduate,5.6,Instagram,Browsing,103,9,1.2,6,High
+22,Undergraduate,1.5,Instagram,Academic,185,6,2.8,9.4,Low
+22,Undergraduate,9.1,Instagram,Academic,47,5.8,2.1,4.7,High
+21,Undergraduate,11.1,YouTube,Browsing,44,2.8,1.3,4.8,Very High
+24,Undergraduate,4.1,Facebook,Browsing,115,2.5,1.6,5.3,Low
+23,Undergraduate,10.4,Instagram,Academic,144,9.2,0.3,4.5,Very High
+19,Undergraduate,4.2,Facebook,Entertainment,29,4,3,5.8,Low
+22,Postgraduate,11,YouTube,Entertainment,207,4.3,2,9,High
+20,Undergraduate,9.3,LinkedIn,Browsing,61,7.8,0.9,7.2,Very High
+19,Undergraduate,9.9,Facebook,Social,59,4,1.8,6,High
+20,Undergraduate,1.2,LinkedIn,Entertainment,244,9.6,0.3,9.1,Medium
+24,Undergraduate,11.6,YouTube,Browsing,96,7.6,2.9,3.8,Very High
+18,Undergraduate,9,YouTube,Entertainment,124,6.4,0.5,4.8,Very High
+19,Undergraduate,4.4,WhatsApp,Social,137,8.9,1.9,6.9,High
+22,Undergraduate,10.1,YouTube,Browsing,61,1.4,0.7,7.2,Medium
+19,Undergraduate,4.1,YouTube,Social,66,3.3,2.2,3.7,Medium
+19,Undergraduate,10.6,TikTok,Browsing,184,5.2,2.3,5.9,Very High
+19,Undergraduate,2.2,Instagram,Social,227,3,2,7.4,Low
+23,Postgraduate,8.7,WhatsApp,Entertainment,41,7.7,1.8,7.7,Medium
+19,Undergraduate,6.9,WhatsApp,Entertainment,204,9.3,2.7,7.3,Very High
+20,Undergraduate,2.1,WhatsApp,Social,231,4.8,0.2,5.4,High
+18,Postgraduate,3.7,TikTok,Social,126,4.1,1,4.1,Medium
+24,Undergraduate,1.1,LinkedIn,Social,46,9.7,0.7,6.1,Low
+21,Undergraduate,6.2,YouTube,Browsing,60,5,3,4.3,Medium
+19,Undergraduate,4.3,Instagram,Entertainment,99,5.4,1.2,9.2,Low
+22,Undergraduate,7.6,Facebook,Browsing,181,4.2,2.2,6.4,High
+19,Postgraduate,4.3,LinkedIn,Entertainment,179,9.2,2.1,5.4,Very High
+22,Undergraduate,4.3,YouTube,Academic,237,6.1,0.6,8.1,High
+20,Postgraduate,9.2,TikTok,Browsing,108,7.9,0.7,6.5,Very High
+22,Undergraduate,1.5,YouTube,Entertainment,85,8.3,0.8,5.4,Medium
+21,Undergraduate,10.9,YouTube,Entertainment,31,4.1,1.2,8.4,Medium
+18,Undergraduate,10.4,TikTok,Browsing,187,4.9,0.7,8.7,Very High
+22,Undergraduate,8.3,WhatsApp,Browsing,92,8.6,0.1,7.5,Very High
+22,Undergraduate,7.5,WhatsApp,Entertainment,95,4.3,2.6,3.8,High
+18,Postgraduate,10.8,Instagram,Browsing,109,8.1,2.9,6.9,Very High
+21,Undergraduate,3,Instagram,Social,220,9.5,1,8.1,High
+19,Postgraduate,1.9,WhatsApp,Browsing,29,6.6,1,4.3,Low
+22,Undergraduate,3.6,LinkedIn,Browsing,115,7.7,0,4.9,High
+18,Postgraduate,9.7,Facebook,Browsing,245,8.2,2,8.8,Very High
+20,Undergraduate,1.4,YouTube,Entertainment,195,8.6,2.5,3.6,High
+18,Undergraduate,7.4,Facebook,Social,39,4.6,0.4,8,Low
+20,Postgraduate,11.9,YouTube,Academic,58,1.5,0.5,6.3,High
+21,Undergraduate,10.4,WhatsApp,Academic,79,4.6,2.4,6.2,High
+19,Undergraduate,6.7,Instagram,Social,85,7.1,1.8,3.5,Very High
+18,Undergraduate,1.7,LinkedIn,Social,84,5.1,0.1,8.4,Low
+24,Undergraduate,10.1,Instagram,Social,198,7.7,1.9,5.7,Very High
+24,Postgraduate,7.6,Facebook,Entertainment,143,4.2,0.9,6.7,High
+23,Undergraduate,2.3,Instagram,Academic,183,6.7,1.1,7.6,Low
+22,Undergraduate,2,WhatsApp,Social,171,2.7,2.3,7.7,Low
+21,Undergraduate,11,LinkedIn,Entertainment,174,7.7,2.4,9.2,Very High
+18,Undergraduate,8.4,Facebook,Academic,149,5.9,1.2,6.7,Very High
+24,Undergraduate,10.1,LinkedIn,Browsing,178,2.8,2.8,5.9,High
+22,Undergraduate,10.7,YouTube,Entertainment,76,3.6,1.2,9.2,Medium
+24,Undergraduate,7.3,Instagram,Academic,97,7.7,2.3,7.4,Medium
+18,Undergraduate,6.7,LinkedIn,Entertainment,213,5.3,1.5,5.3,Very High
+20,Undergraduate,5.7,TikTok,Academic,48,2.9,2.7,4.3,Low
+18,Undergraduate,4.5,Instagram,Academic,34,9.7,2.7,8.6,Low
+23,Undergraduate,5.8,YouTube,Browsing,31,7.4,0.3,5.7,High
+18,Undergraduate,9.5,LinkedIn,Entertainment,120,9.6,2.8,7.5,Very High
+18,Undergraduate,7.6,Facebook,Social,175,4.8,2.5,6.3,High
+23,Undergraduate,10.8,YouTube,Browsing,103,5.3,2.4,4.7,Very High
+21,Undergraduate,5.9,TikTok,Browsing,144,9.1,0.6,7.1,Very High
+18,Undergraduate,7.7,LinkedIn,Academic,122,5.7,2.4,3.9,Very High
+23,Undergraduate,7.9,WhatsApp,Social,43,7.4,2.6,6,High
+22,Undergraduate,7.5,Instagram,Entertainment,168,3.3,0.9,6.8,High
+20,Undergraduate,8.7,Facebook,Social,157,5,2.9,6.1,High
+20,Undergraduate,3.6,WhatsApp,Social,129,2.1,0.1,8,Low
+18,Undergraduate,6.6,LinkedIn,Social,97,2.9,0.4,8.5,Low
+21,Undergraduate,2.1,LinkedIn,Social,120,1,1.6,8.1,Low
+21,Postgraduate,5.2,YouTube,Social,165,1.4,1.7,3.7,High
+22,Undergraduate,6.4,LinkedIn,Academic,235,9.8,1.9,4.7,Very High
+18,Undergraduate,8.2,Facebook,Academic,161,3.2,0.1,6.7,High
+20,Undergraduate,11.5,WhatsApp,Browsing,181,7,2.9,9.1,Very High
+21,Undergraduate,7.6,Facebook,Academic,147,8.6,0.1,8.5,Very High
+18,Undergraduate,9.2,TikTok,Browsing,77,6,0.4,8.6,High
+24,Postgraduate,6.6,TikTok,Browsing,95,2.4,0,5.3,Medium
+21,Undergraduate,8,Instagram,Entertainment,169,7.6,1.7,6.1,Very High
+23,Undergraduate,1.8,Instagram,Social,217,6.4,2.8,6.3,Medium
+24,Undergraduate,3.8,TikTok,Academic,55,7.6,2,4.4,Medium
+21,Undergraduate,5,LinkedIn,Entertainment,192,7.9,2.5,3.7,Very High
+20,Undergraduate,6.2,Facebook,Academic,183,9.8,0,9.2,High
+19,Undergraduate,1.5,TikTok,Browsing,41,6.2,1.6,4.9,Low
+24,Undergraduate,2.5,Instagram,Academic,225,4.1,1.4,4.9,Medium
+22,Undergraduate,4,TikTok,Social,146,6.8,1.5,4,High
+22,Undergraduate,11.7,LinkedIn,Browsing,99,1.6,0.2,9.1,Medium
+20,Undergraduate,4.6,TikTok,Browsing,208,9.1,2.1,7,High
+21,Undergraduate,6.3,Facebook,Entertainment,119,2.1,1.5,7.5,Low
+18,Undergraduate,3.2,WhatsApp,Social,203,4,2.3,9,Low
+21,Undergraduate,7.7,LinkedIn,Browsing,236,8.3,1.5,5.6,Very High
+20,Undergraduate,4.1,Instagram,Social,115,6.4,0.4,7.2,Medium
+22,Undergraduate,3.3,Facebook,Academic,180,4.5,1.9,3.7,High
+21,Undergraduate,6.7,TikTok,Social,192,5.3,0.5,4.6,Very High
+22,Postgraduate,1.1,TikTok,Browsing,183,8.7,2.6,8.5,Low
+24,Undergraduate,1.1,WhatsApp,Entertainment,167,4.1,1.8,8.1,Low
+18,Undergraduate,3.4,Instagram,Browsing,37,8.8,0.5,5.6,Medium
+24,Undergraduate,1.4,Instagram,Social,57,1.8,2.9,5.8,Low
+22,Undergraduate,2.2,YouTube,Social,214,8,1.6,6.7,Medium
+22,Undergraduate,4.7,Instagram,Browsing,170,8.6,0.2,3.5,Very High
+19,Undergraduate,9.8,WhatsApp,Social,243,2.6,1.9,4.9,Very High
+19,Postgraduate,7.3,YouTube,Academic,128,4.9,0.8,4.7,Very High
+24,Undergraduate,6.6,YouTube,Browsing,142,2.5,2.4,5,Medium
+23,Undergraduate,4.2,TikTok,Entertainment,163,7.4,2.5,8.3,Low
+24,Undergraduate,11.2,TikTok,Browsing,206,5.8,2.9,5.2,Very High
+19,Postgraduate,5.4,Instagram,Academic,216,6.7,1.5,4.6,Very High
+22,Undergraduate,2,YouTube,Academic,215,2.8,1.4,6.5,Low
+20,Postgraduate,7.8,TikTok,Academic,168,2.9,2.3,8.7,Low
+24,Undergraduate,2.3,WhatsApp,Academic,123,1.4,0.4,4.9,Low
+22,Postgraduate,4.8,TikTok,Academic,225,3.9,1.6,4,Very High
+20,Undergraduate,6.6,LinkedIn,Entertainment,242,6,1.6,5.6,Very High
+20,Postgraduate,10.6,LinkedIn,Social,225,8.7,0.3,8,Very High
+19,Undergraduate,6.4,TikTok,Academic,217,7,1.3,6.8,Very High
+24,Postgraduate,8.7,YouTube,Academic,159,4.9,2.6,8.4,Medium
+21,Undergraduate,11.9,YouTube,Browsing,163,9.6,2.6,9.3,Very High
+18,Undergraduate,2.4,Facebook,Entertainment,100,7.5,0.3,8.3,Low
+19,Undergraduate,4,LinkedIn,Entertainment,106,9.4,0.3,7.1,High
+19,Undergraduate,5.3,WhatsApp,Social,161,5.7,0.8,6.5,High
+21,Undergraduate,5.6,YouTube,Entertainment,80,3.3,2.6,3.7,Medium
+18,Undergraduate,5.5,Instagram,Browsing,218,1.5,0.4,9.4,Low
+22,Undergraduate,11,LinkedIn,Browsing,65,7.5,2.2,5.8,Very High
+23,Undergraduate,8.9,WhatsApp,Social,51,2.1,0.3,4.4,High
+24,Postgraduate,7.7,WhatsApp,Browsing,34,3.7,1.9,7.5,Low
+23,Undergraduate,4.4,YouTube,Academic,63,5.8,1.1,5.2,Medium
+22,Postgraduate,10.1,WhatsApp,Academic,164,6.1,2.4,7,Very High
+19,Undergraduate,11.5,YouTube,Browsing,188,6.4,0.7,7,Very High
+18,Undergraduate,10,TikTok,Social,73,2.5,1.9,6.2,Medium
+19,Undergraduate,1,LinkedIn,Entertainment,63,4.4,0.7,8.5,Low
+20,Undergraduate,8,Facebook,Social,117,6.6,2.1,5.1,Very High
+19,Undergraduate,1.6,TikTok,Entertainment,24,9.7,2.6,6.2,Low
+19,Undergraduate,3.8,LinkedIn,Browsing,128,7.5,0.4,6.7,Medium
+22,Undergraduate,1.7,YouTube,Browsing,46,9.3,2.6,7.5,Low
+22,Undergraduate,7.6,LinkedIn,Academic,135,7.9,1.8,8.2,High
+22,Postgraduate,8.6,YouTube,Entertainment,106,6.3,0.4,5.9,Very High
+23,Postgraduate,2.3,TikTok,Social,123,2.7,1.3,7.4,Low
+20,Undergraduate,5.2,Instagram,Browsing,142,7,0.5,4.4,Very High
+22,Undergraduate,6,Instagram,Social,225,6.6,2.1,9.1,Medium
+18,Undergraduate,5.1,LinkedIn,Academic,98,6.4,2.3,5.8,Medium
+23,Undergraduate,2.3,Instagram,Entertainment,62,5.4,0.3,7.9,Low
+21,Undergraduate,5.6,YouTube,Entertainment,116,5.8,1.5,3.6,Very High
+18,Undergraduate,9.3,WhatsApp,Browsing,50,4,2.4,4.7,High
+24,Undergraduate,1.8,YouTube,Entertainment,118,5.7,2.8,6.4,Low
+24,Postgraduate,1.9,WhatsApp,Browsing,36,2.8,1.5,8.8,Low
+18,Undergraduate,4.9,TikTok,Academic,239,8.2,2.9,6.7,High
+22,Undergraduate,11.4,Facebook,Entertainment,102,2.7,1.6,9.1,Medium
+21,Undergraduate,8.4,WhatsApp,Browsing,129,1.8,1.2,6.4,Medium
+21,Undergraduate,8.5,Instagram,Social,201,4.9,2.5,6.4,Very High
+23,Undergraduate,5,YouTube,Browsing,209,6.9,1.5,4.2,Very High
+21,Postgraduate,7.5,TikTok,Entertainment,234,4.9,1.4,8.3,High
+24,Undergraduate,1.1,Instagram,Academic,51,3.5,1.5,5,Low
+20,Postgraduate,8,TikTok,Entertainment,187,6,2.5,8.9,Medium
+22,Undergraduate,11,Facebook,Entertainment,160,4.1,2.5,9,High
+21,Undergraduate,7.7,YouTube,Browsing,231,9.4,1.2,9.2,Very High
+23,Undergraduate,10.6,LinkedIn,Social,54,9.3,1,6.6,Very High
+24,Undergraduate,9,YouTube,Entertainment,152,5.5,1.5,7.6,High
+20,Postgraduate,2.3,Facebook,Social,220,4,1.7,8.2,Low
+19,Postgraduate,10.9,YouTube,Browsing,48,7.6,0.7,4.3,Very High
+19,Undergraduate,1.7,LinkedIn,Social,89,1.3,2.4,7.1,Low
+20,Undergraduate,6.9,WhatsApp,Browsing,172,5.3,1.5,3.7,Very High
+24,Undergraduate,2.6,TikTok,Academic,114,4,1,6.5,Low
+23,Postgraduate,1.1,LinkedIn,Social,41,9.3,0.3,4.4,Medium
+20,Undergraduate,5.6,Instagram,Social,213,1.1,0.7,4.6,High
+22,Undergraduate,4.2,Facebook,Academic,192,6,2.8,5.7,Medium
+22,Undergraduate,6.3,WhatsApp,Social,88,7.7,0.9,6.1,High
+19,Undergraduate,7.3,Instagram,Academic,238,5.4,0.5,7.2,Very High
+21,Undergraduate,1.5,Instagram,Entertainment,108,1.8,1.4,3.9,Low
+23,Undergraduate,2.4,Facebook,Browsing,91,9.8,0.9,6.5,Medium
+19,Postgraduate,7.1,WhatsApp,Academic,148,5.7,0.1,4.6,Very High
+21,Undergraduate,4.8,Instagram,Social,231,6.5,1,6.9,High
+21,Undergraduate,9,Instagram,Academic,191,3.1,1.6,7.3,High
+22,Postgraduate,8.2,WhatsApp,Social,106,5.4,1.7,6.8,High
+24,Undergraduate,10.3,YouTube,Entertainment,115,4.9,1.1,7.9,High
+18,Postgraduate,8.6,Instagram,Academic,94,1.7,1.3,5.5,Medium
+24,Undergraduate,5.7,TikTok,Entertainment,186,2,2.9,8.1,Low
+18,Undergraduate,8.4,WhatsApp,Browsing,73,8.5,1.1,6.1,Very High
+20,Postgraduate,4,Instagram,Social,107,3.2,0.8,6.4,Low
+22,Undergraduate,4.4,Facebook,Social,222,2.8,0.7,7.4,Medium
+21,Undergraduate,9.7,LinkedIn,Entertainment,176,5.5,1.4,3.6,Very High
+23,Undergraduate,5.9,TikTok,Browsing,73,7.9,2.3,7.4,Medium
+18,Undergraduate,9.8,LinkedIn,Academic,237,1.6,0.6,7.2,Very High
+24,Undergraduate,10,LinkedIn,Academic,35,6.2,2.1,5.4,High
+21,Undergraduate,10.4,Instagram,Social,118,2.1,0.1,4,Very High
+18,Postgraduate,11.1,TikTok,Entertainment,39,1.3,1.3,4,High
+18,Undergraduate,5.7,TikTok,Entertainment,65,1.5,2.3,9,Low
+18,Undergraduate,4.5,YouTube,Academic,214,8.5,1,7.6,High
+23,Undergraduate,7.4,LinkedIn,Browsing,212,2.1,1.7,4.3,Very High
+22,Undergraduate,5.1,TikTok,Browsing,146,1.4,0.6,5.6,Medium
+23,Undergraduate,7.6,YouTube,Academic,77,4.9,2.2,7.1,Medium
+19,Postgraduate,8.8,WhatsApp,Academic,200,8.6,0.2,8.5,Very High
+21,Undergraduate,8.6,YouTube,Entertainment,130,3.4,2.6,3.8,Very High
+22,Undergraduate,5.1,Facebook,Browsing,148,4.8,0.6,4.9,High
+22,Undergraduate,2.8,Instagram,Academic,100,1.4,2.6,8.8,Low
+22,Undergraduate,5.7,WhatsApp,Academic,213,5,1.1,3.6,Very High
+24,Undergraduate,2.6,WhatsApp,Social,176,6.2,2.2,4.7,Medium
+22,Undergraduate,10.8,Facebook,Academic,103,6.1,1,9.3,High
+23,Postgraduate,4.8,YouTube,Academic,89,4,2.7,7.2,Low
+22,Undergraduate,2.7,Instagram,Browsing,27,3.8,0.4,5.1,Low
+20,Undergraduate,1.3,YouTube,Entertainment,48,2,0.5,3.9,Low
+21,Undergraduate,8.1,TikTok,Browsing,131,4.3,1.5,3.7,Very High
+22,Undergraduate,8,YouTube,Entertainment,198,1.9,0.2,5,Very High
+21,Undergraduate,4.7,WhatsApp,Social,180,7.9,0.6,8.8,Medium
+20,Undergraduate,1.8,Instagram,Academic,150,9.7,2.8,6,Medium
+20,Undergraduate,5.5,YouTube,Social,207,9.7,2.9,7.8,High
+21,Undergraduate,4.4,Instagram,Entertainment,182,8.8,1.1,9,Medium
+18,Undergraduate,8.4,Instagram,Browsing,216,6.4,2.8,5.9,Very High
+19,Undergraduate,7.7,TikTok,Browsing,238,7.3,1.6,4.6,Very High
+24,Postgraduate,5,TikTok,Social,127,3.6,0.8,6.6,Medium
+18,Postgraduate,3.4,WhatsApp,Entertainment,223,6.7,2.1,8.9,Low
+18,Undergraduate,11.9,Facebook,Social,231,5.1,2,8.3,Very High
+23,Postgraduate,6,Instagram,Social,128,5.3,3,3.9,High
+24,Undergraduate,8.6,Facebook,Academic,39,7.8,0.8,7.7,High
+24,Undergraduate,2.5,WhatsApp,Social,92,3.5,2,6.9,Low
+18,Undergraduate,6.3,Instagram,Academic,186,3.9,0.2,8.9,Medium
+22,Undergraduate,1.3,Instagram,Academic,23,9.3,0.3,4.2,Medium
+23,Undergraduate,6.6,LinkedIn,Browsing,38,1.5,0,6.7,Low
+23,Postgraduate,11.6,Facebook,Academic,121,5.4,3,8.8,High
+20,Undergraduate,5.2,YouTube,Academic,238,9.2,2.4,6,Very High
+24,Undergraduate,1.4,TikTok,Browsing,192,6.5,2.4,6.4,Low
+18,Undergraduate,1.3,YouTube,Social,190,5.9,1.5,3.9,High
+20,Postgraduate,5.3,Facebook,Entertainment,160,3.2,0.9,5.2,High
+21,Undergraduate,2.8,TikTok,Entertainment,160,4.1,0.5,5.4,Medium
+19,Undergraduate,1.3,YouTube,Entertainment,207,8.7,0.9,9.2,Low
+23,Undergraduate,9.3,LinkedIn,Social,204,6,1.1,5.2,Very High
+21,Undergraduate,6,TikTok,Academic,105,5.6,2.3,6.3,Medium
+21,Postgraduate,4.2,Instagram,Entertainment,239,1.9,1.6,7.5,Low
+22,Postgraduate,10.9,YouTube,Social,71,1.1,0.2,4.5,Very High
+19,Undergraduate,2.3,TikTok,Academic,130,9.7,0.1,6.4,High
+21,Postgraduate,11.5,LinkedIn,Browsing,200,4.4,0.3,7.9,Very High
+21,Undergraduate,4.5,TikTok,Entertainment,128,6.4,1.2,8.7,Low
+19,Postgraduate,10.8,TikTok,Academic,105,1.7,2.8,7.3,Medium
+19,Undergraduate,7.6,LinkedIn,Entertainment,62,7.1,1.9,7.5,Medium
+21,Undergraduate,10.1,YouTube,Entertainment,230,9.4,2.4,4.3,Very High
+19,Undergraduate,11.8,WhatsApp,Entertainment,219,6.2,1.4,9.2,Very High
+21,Undergraduate,4.2,YouTube,Academic,219,2.1,1.1,4.3,High
+21,Undergraduate,11.6,Facebook,Social,61,6.2,0.3,8.1,Very High
+22,Undergraduate,5.3,LinkedIn,Academic,109,7.9,2.6,5.1,High
+18,Undergraduate,5.2,YouTube,Entertainment,134,4.7,2.3,9.1,Low
+21,Undergraduate,4.7,TikTok,Academic,45,8.9,0.5,7.8,Medium
+20,Undergraduate,7,LinkedIn,Browsing,170,6.8,1.5,8,High
+23,Undergraduate,2.7,Instagram,Social,62,9.1,1.5,4.8,Medium
+24,Postgraduate,7.1,YouTube,Academic,96,6.6,1.9,6.2,High
+18,Undergraduate,7,LinkedIn,Browsing,175,2.2,2.8,7.2,Low
+18,Undergraduate,9.4,YouTube,Social,156,3.8,1.7,8.1,High
+18,Undergraduate,10.2,LinkedIn,Browsing,39,2.8,1.6,4.1,High
+22,Postgraduate,5.8,TikTok,Social,203,9.2,0.2,9.3,High
+21,Undergraduate,4.3,Instagram,Academic,230,7.8,0.2,8.8,High
+22,Undergraduate,3.9,Instagram,Browsing,58,7.1,0.6,5.1,Medium
+21,Postgraduate,3.1,Facebook,Entertainment,198,3.7,0.1,8.4,Low
+22,Postgraduate,1.6,LinkedIn,Browsing,31,2.7,2.2,6.6,Low
+22,Undergraduate,4.8,YouTube,Social,226,7.8,2.2,6.3,High
+23,Undergraduate,4,Instagram,Academic,242,5.3,0.4,5.4,Very High
+20,Undergraduate,11.6,Instagram,Social,202,3,2.5,7,Very High
+22,Postgraduate,7.1,WhatsApp,Browsing,225,6.5,0.5,7.9,Very High
+23,Undergraduate,4.8,WhatsApp,Browsing,30,1.4,0.9,6,Low
+19,Undergraduate,7.4,Instagram,Entertainment,173,3.9,0.7,7.3,High
+20,Postgraduate,2.5,LinkedIn,Academic,61,5.2,1.1,7.7,Low
+22,Undergraduate,5.9,Facebook,Academic,174,2.3,0.8,7.8,Low
+24,Undergraduate,7.9,Instagram,Browsing,30,9.9,1.5,3.8,Very High
+18,Undergraduate,6.4,TikTok,Academic,57,2.9,1.2,8.7,Low
+19,Undergraduate,5.4,YouTube,Entertainment,117,2.2,3,6.2,Low
+19,Undergraduate,11.9,Facebook,Social,190,2.8,0.2,5.1,Very High
+23,Undergraduate,10.7,TikTok,Academic,38,7.9,0.4,5,Very High
+19,Undergraduate,7.9,Facebook,Browsing,211,4.8,0.2,6.4,Very High
+20,Undergraduate,7.3,TikTok,Social,153,6.1,1.9,8.8,Medium
+22,Postgraduate,7.8,YouTube,Social,193,1.2,0.2,5.8,High
+22,Undergraduate,3.2,YouTube,Entertainment,135,1.3,2.5,8,Low
+24,Postgraduate,5.3,WhatsApp,Browsing,249,5,1.5,4.1,Very High
+18,Undergraduate,1.4,LinkedIn,Academic,132,8.3,1.6,6.4,Medium
+23,Postgraduate,6.2,TikTok,Browsing,189,9,1.7,9.5,High
+18,Undergraduate,7,WhatsApp,Social,239,1.8,0.5,8.1,Medium
+19,Undergraduate,3.5,TikTok,Browsing,84,5.8,0.6,4.8,Medium
+24,Undergraduate,11.6,WhatsApp,Academic,118,9.2,1,6.5,Very High
+18,Postgraduate,11,YouTube,Academic,91,4.5,1.8,4.9,Very High
+20,Undergraduate,8.9,Facebook,Entertainment,206,8.5,0.6,6,Very High
+22,Undergraduate,6.9,WhatsApp,Academic,71,2.2,0.3,8.2,Low
+19,Undergraduate,10.6,TikTok,Academic,137,9.4,2.9,8.1,Very High
+24,Postgraduate,2.4,TikTok,Browsing,194,7.8,0.1,4.9,Very High
+18,Undergraduate,9.7,LinkedIn,Browsing,139,9.5,2.4,9,High
+23,Undergraduate,2.4,YouTube,Social,26,7.1,2.4,7.1,Low
+20,Undergraduate,9.7,TikTok,Entertainment,30,4.3,0.9,5.8,High
+20,Postgraduate,4,Instagram,Browsing,122,9.4,0.4,6.5,High
+18,Undergraduate,10.6,Facebook,Academic,80,3.5,0.4,7.1,High
+22,Undergraduate,11.4,WhatsApp,Social,87,4,2.1,6.9,High
+18,Undergraduate,2.6,LinkedIn,Browsing,172,7.3,1.9,6.4,Medium
+19,Undergraduate,6.1,Facebook,Entertainment,159,7.9,2.3,6.5,High
+18,Undergraduate,11.8,YouTube,Entertainment,173,9.4,2.8,4.6,Very High
+20,Undergraduate,6.3,LinkedIn,Social,121,2.8,2.1,8.4,Low
+24,Undergraduate,10.5,WhatsApp,Social,129,8.2,0.5,6.8,Very High
+18,Undergraduate,7.5,WhatsApp,Social,159,7.6,0.7,4.3,Very High
+22,Undergraduate,5.1,Instagram,Social,190,1.6,2.5,8.1,Low
+24,Undergraduate,4.1,YouTube,Social,70,4.5,0.6,9.1,Low
+23,Undergraduate,3.2,LinkedIn,Academic,136,3.5,0.2,9.2,Low
+21,Undergraduate,9.4,LinkedIn,Academic,184,3.7,2.1,5.7,Very High
+18,Undergraduate,5.3,TikTok,Browsing,65,9.8,1.2,4.3,Very High
+22,Undergraduate,6.6,Instagram,Entertainment,72,6.8,2.8,6.6,Medium
+24,Undergraduate,6.4,Instagram,Academic,107,7.5,2,4.2,Very High
+22,Undergraduate,7.4,LinkedIn,Academic,227,9.8,0.3,9.1,Very High
+23,Undergraduate,10.5,LinkedIn,Academic,140,4.4,2.8,4.6,Very High
+20,Undergraduate,11.8,Facebook,Browsing,32,8.2,0.8,5,Very High
+22,Postgraduate,5.5,Facebook,Social,108,4.9,1,5.9,Medium
+24,Undergraduate,10.1,Facebook,Browsing,144,8.8,1.2,5.8,Very High
+22,Undergraduate,9.4,Instagram,Entertainment,137,2.6,0.2,8.3,Medium
+22,Undergraduate,7.3,TikTok,Entertainment,73,9.5,1.5,6.2,Very High
+22,Undergraduate,11.5,WhatsApp,Entertainment,204,3,0.4,4.5,Very High
+19,Undergraduate,3.2,Facebook,Entertainment,135,3.9,1.2,5.1,Medium
+19,Undergraduate,2.2,TikTok,Academic,137,7.8,1.1,6.6,Medium
+20,Undergraduate,10.4,YouTube,Academic,23,4.5,2.3,4.4,High
+18,Undergraduate,5.8,Facebook,Browsing,94,6.5,2.4,7.2,Medium
+22,Undergraduate,10.3,WhatsApp,Social,243,5,0.5,6.9,Very High
+23,Undergraduate,10.8,YouTube,Entertainment,68,7.7,1.1,7.8,Very High
+18,Postgraduate,1.7,YouTube,Browsing,26,3.1,1.1,9.1,Low
+23,Undergraduate,10.7,WhatsApp,Academic,129,1.5,0.5,9,Medium
+18,Postgraduate,5.9,Facebook,Academic,141,3.7,2.4,9.2,Low
+20,Undergraduate,6.6,Instagram,Social,30,5.3,2.1,5,Medium
+22,Undergraduate,7.9,WhatsApp,Social,111,2.5,0.6,4.3,High
+22,Undergraduate,11.2,WhatsApp,Social,201,4.2,1.1,5.3,Very High
+21,Undergraduate,1.2,WhatsApp,Browsing,234,4.6,0.3,8.9,Low
+23,Postgraduate,6.2,YouTube,Academic,192,1.5,1.9,9.3,Low
+18,Undergraduate,8.6,TikTok,Academic,42,6.2,0.4,8.7,Medium
+18,Postgraduate,8.9,Instagram,Social,47,9,3,4.2,Very High
+19,Undergraduate,8.6,Facebook,Entertainment,130,2.4,2.3,9.2,Low
+21,Postgraduate,2.5,Facebook,Social,76,6.4,1.2,6,Low
+24,Undergraduate,4.3,TikTok,Browsing,45,7,1.7,3.6,High
+24,Undergraduate,4.9,WhatsApp,Social,172,4.8,2.7,6.2,Medium
+19,Undergraduate,9.8,Instagram,Social,73,7.3,1.7,3.8,Very High
+19,Undergraduate,4.1,Facebook,Browsing,48,4.7,0.5,6.8,Low
+19,Undergraduate,3.3,LinkedIn,Social,230,5.5,1.1,5.5,High
+23,Undergraduate,11.5,Facebook,Academic,116,1.1,2.5,6.3,High
+23,Postgraduate,1.1,WhatsApp,Entertainment,183,7.2,1.9,7.2,Low
+20,Undergraduate,12,LinkedIn,Social,33,7,2,8.7,High
+20,Undergraduate,8.4,TikTok,Browsing,97,1.3,2.6,7.5,Low
+19,Undergraduate,10.1,Instagram,Entertainment,54,4.3,2.7,6.1,High
+21,Undergraduate,4.2,TikTok,Browsing,49,9.8,2.8,8.4,Low
+18,Undergraduate,1.2,TikTok,Entertainment,111,4.8,0.3,8.9,Low
+23,Undergraduate,9.1,Instagram,Entertainment,36,5.5,1.6,4.2,Very High
+21,Undergraduate,10.2,Instagram,Social,214,9.2,2.2,6.7,Very High
+22,Undergraduate,9.1,Facebook,Academic,227,7.5,2.3,5.2,Very High
+23,Undergraduate,2.6,Facebook,Social,177,6.2,1.8,3.8,High
+23,Undergraduate,9.3,Instagram,Browsing,112,8.2,0.5,7.5,Very High
+20,Undergraduate,9.5,LinkedIn,Browsing,192,8.8,2.4,8.7,Very High
+18,Undergraduate,8.2,YouTube,Entertainment,98,5.1,2.2,4.5,Very High
+18,Undergraduate,9.4,Facebook,Entertainment,129,5.3,0.3,8.4,High
+24,Undergraduate,10.3,YouTube,Academic,236,4.5,1.4,8.6,Very High
+24,Undergraduate,7.7,LinkedIn,Social,198,9.7,0.5,9,Very High
+24,Postgraduate,2,Instagram,Browsing,121,7.3,1,5.1,Medium
+24,Undergraduate,6.4,LinkedIn,Entertainment,125,1.7,0.1,8.9,Low
+22,Postgraduate,1.9,Facebook,Academic,66,8.8,1.2,5.4,Medium
+22,Undergraduate,5.5,TikTok,Browsing,200,5.3,1.6,6.8,High
+23,Undergraduate,5.5,Instagram,Entertainment,83,1.6,1.9,3.8,Medium
+19,Undergraduate,1.7,WhatsApp,Browsing,185,5.9,2,3.8,High
+20,Postgraduate,4.8,YouTube,Academic,83,4.8,2.5,7.8,Low
+20,Undergraduate,2.2,LinkedIn,Academic,106,8.9,0.6,6.2,Medium
+24,Postgraduate,9.9,Instagram,Browsing,236,2.8,0.4,5,Very High
+23,Postgraduate,11.4,LinkedIn,Social,26,8.4,2.6,4.6,Very High
+21,Undergraduate,1.8,Instagram,Browsing,41,6,0.5,7.5,Low
+19,Undergraduate,11.5,Facebook,Entertainment,100,1.5,2.9,3.5,Very High
+23,Undergraduate,6.7,Facebook,Social,229,9.7,2.5,8.3,Very High
+19,Undergraduate,4.3,Facebook,Entertainment,188,5.6,1.5,4,Very High
+19,Postgraduate,1.8,LinkedIn,Browsing,93,3.6,2.9,4.6,Low
+19,Postgraduate,6.5,WhatsApp,Social,157,5.2,0.3,5.8,Very High
+23,Undergraduate,9.7,Facebook,Entertainment,204,8.7,0.9,6.4,Very High
+24,Undergraduate,8.8,Instagram,Browsing,154,3.7,1.9,5.6,High
+20,Undergraduate,1.6,Facebook,Browsing,144,2.7,1.1,5.4,Low
+20,Undergraduate,1.8,TikTok,Social,69,2.2,2.8,9.3,Low
+24,Postgraduate,5.4,Facebook,Browsing,249,3.7,0.2,7.3,High
+19,Undergraduate,4.2,LinkedIn,Academic,238,8,1.6,3.6,Very High
+21,Undergraduate,3.6,WhatsApp,Entertainment,71,5.2,1.8,6.1,Low
+18,Undergraduate,4.1,TikTok,Entertainment,180,3,2,8.8,Low
+23,Undergraduate,9.8,LinkedIn,Browsing,20,2.5,0.8,5.3,High
+18,Undergraduate,11.2,LinkedIn,Browsing,200,4,1.1,4.1,Very High
+24,Undergraduate,5.5,LinkedIn,Academic,207,9.5,2.5,8.1,High
+21,Undergraduate,11,Instagram,Social,181,4.1,0.6,7.1,Very High
+23,Undergraduate,4.5,LinkedIn,Browsing,23,9.9,2.5,6.9,Medium

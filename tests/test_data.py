@@ -57,6 +57,19 @@ def test_missing_feature_column_is_actionable():
         prepare_data(pd.DataFrame([row()]).drop(columns=['Sleep_Hours_Per_Night']))
 
 
+def test_age_accepts_values_beyond_the_18_24_cohort():
+    frame = pd.DataFrame([row(Age=15), row(Age=32), row(Age=72)])
+    cleaned, _ = prepare_data(frame)
+    assert cleaned['Age'].tolist() == [15, 32, 72]
+
+
+def test_builtin_test_csv_is_processable_and_has_valid_age_range():
+    frame = pd.read_csv('MindTrack_test.csv')
+    cleaned, _ = prepare_data(frame)
+    assert not cleaned.empty
+    assert cleaned['Age'].between(0, 120).all()
+
+
 def test_splits_are_disjoint_and_preserve_four_classes():
     records = [row(Daily_Unlocks=70+i, Stress_Level=label)
                for i, label in enumerate(['Low', 'Medium', 'High', 'Very High'] * 30)]

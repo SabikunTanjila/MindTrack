@@ -141,7 +141,7 @@ def export_artifacts(training, clustering, evaluation, importance, splits, audit
         'limitations': [
             'Educational estimates of dataset labels, not a clinical assessment.',
             'Dataset source, license, collection method, and synthetic status are unverified.',
-            'The dataset covers ages 18–24; performance outside this cohort is untested.',
+            'The model accepts a broad age range, but performance outside the observed dataset distribution remains unverified.',
             'Probabilities are uncalibrated model outputs.',
             'Study and physical-activity time windows need source confirmation.',
             'Global feature importance and input comparisons do not establish individual causes.',
