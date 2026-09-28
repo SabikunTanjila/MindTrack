@@ -40,7 +40,7 @@ function buildForm() {
     const input=document.createElement('input'); input.id=name; input.name=name; input.type='number'; input.required=true;
     [input.min,input.max]=metadata.bounds[name]; input.step=['Age','Daily_Unlocks'].includes(name)?'1':'0.1';
     const help=document.createElement('small'); help.id=`${name}-help`;
-    help.textContent=name==='Age'?'Dataset cohort: ages 18–24': ['Study_Hours','Physical_Activity_Hours'].includes(name)?'Hours as recorded in the dataset':'Typical daily value';
+    help.textContent=name==='Age'?'Accepted: ages 13–120; training cohort: 18–24': ['Study_Hours','Physical_Activity_Hours'].includes(name)?'Hours as recorded in the dataset':'Typical daily value';
     input.setAttribute('aria-describedby',help.id); wrapper.append(label,input,help); $('numeric-fields').append(wrapper);
   });
   metadata.categorical_features.forEach(name => {
@@ -48,6 +48,7 @@ function buildForm() {
     const label=document.createElement('label'); label.htmlFor=name; label.textContent=metadata.display_names[name];
     const select=document.createElement('select'); select.id=name; select.name=name; select.required=true;
     metadata.categories[name].forEach(choice=>{ const option=document.createElement('option'); option.value=choice; option.textContent=choice; select.append(option); });
+    const other=document.createElement('option'); other.value=name==='Most_Used_Platform'?'Other':'Other / Not applicable'; other.textContent=other.value; select.append(other);
     wrapper.append(label,select); $('category-fields').append(wrapper);
   });
   resetForm(); $('fields').disabled=false;

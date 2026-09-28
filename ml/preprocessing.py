@@ -7,7 +7,8 @@ from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
-from ml.config import BOUNDS, CATEGORICAL, FEATURES, LABELS, NUMERIC, SEED, TARGET
+from ml.config import (BOUNDS, CATEGORICAL, CATEGORY_ALIASES, FEATURES, LABELS,
+                       MODEL_FEATURES, NUMERIC, SEED, TARGET)
 
 
 class FeatureCleaner(TransformerMixin, BaseEstimator):
@@ -32,6 +33,7 @@ class FeatureCleaner(TransformerMixin, BaseEstimator):
                 result[column] = values.where(np.isfinite(values) & values.between(lo, hi))
             else:
                 values = result[column].astype('string').str.strip()
+                values = values.replace(CATEGORY_ALIASES.get(column, {}))
                 result[column] = values.replace('', pd.NA).astype(object)
                 result[column] = result[column].where(pd.notna(result[column]), np.nan)
         return result
@@ -41,7 +43,13 @@ class FeatureCleaner(TransformerMixin, BaseEstimator):
 
 
 def make_preprocessor(features=None):
-    columns = features or FEATURES
+    """Build preprocessing for the predictive model or an explicit feature set.
+
+    The default deliberately excludes Age because the training dataset contains
+    only 18-24 year olds. Explicit callers (for example clustering) can still
+    provide their own feature list.
+    """
+    columns = features or MODEL_FEATURES
     numeric = [c for c in columns if c in NUMERIC]
     categorical = [c for c in columns if c in CATEGORICAL]
     transformers = [('numeric', Pipeline([

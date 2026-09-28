@@ -1,1 +1,1 @@
-"""MindTrack backend package."""
+"""MindTrack prediction API."""
