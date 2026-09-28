@@ -1,4 +1,4 @@
-"""FastAPI application used by the Colab dashboard."""
+"""FastAPI application used by the MindTrack dashboard."""
 import logging
 from pathlib import Path
 
@@ -58,7 +58,7 @@ def create_app(model_dir=None):
 
         @application.get('/static/services/app.js', include_in_schema=False)
         def script_fallback():
-            return Response('// Dashboard assets are embedded in the Colab notebook.\n',
+            return Response('// MindTrack dashboard assets are served by FastAPI.\n',
                             media_type='application/javascript')
 
     return application
