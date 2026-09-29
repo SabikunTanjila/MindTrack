@@ -1,5 +1,5 @@
 """Strict assessment validation with the original dataset field names."""
-from typing import Literal
+from typing import List, Literal
 from pydantic import BaseModel, ConfigDict, Field
 
 
@@ -14,3 +14,21 @@ class Assessment(BaseModel):
     Academic_Level: Literal['High School', 'Undergraduate', 'Graduate']
     Most_Used_Platform: str = Field(min_length=1, max_length=80, pattern=r'.*\S.*')
     Purpose_Of_Use: Literal['Education', 'Entertainment', 'Networking', 'News']
+
+
+class ActionItem(BaseModel):
+    """A single prioritised, actionable reflection prompt."""
+    category: str
+    priority: Literal['High', 'Medium', 'Low']
+    title: str
+    description: str
+    action: str
+
+
+class RecommendationResponse(BaseModel):
+    """Personalised recommendations returned alongside the prediction."""
+    risk_level: str
+    cluster_id: int
+    cluster_insight: str
+    overall_summary: str
+    actions: List[ActionItem]

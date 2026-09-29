@@ -5,6 +5,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from backend.predictor import Predictor
+from backend.recommendations import generate_personalized_recommendations
 from backend.schemas import Assessment
 from ml.config import ROOT
 
@@ -40,7 +41,17 @@ def create_app(model_dir=None):
 
     @application.post('/predict')
     def predict(assessment: Assessment):
-        return ready().predict(assessment)
+        result = ready().predict(assessment)
+        # Enrich with personalised recommendations
+        predicted_risk = result.get('label', 'Low')
+        cluster_id = result.get('cluster', {}).get('id', 0)
+        recommendations = generate_personalized_recommendations(
+            user_input=assessment.model_dump(),
+            predicted_risk=predicted_risk,
+            cluster_id=cluster_id,
+        )
+        result['recommendations'] = recommendations
+        return result
 
     frontend = ROOT / 'frontend'
     application.mount('/static', StaticFiles(directory=frontend / 'src'), name='static')

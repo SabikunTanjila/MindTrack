@@ -23,6 +23,19 @@
         <article id="result" class="card result-card" hidden aria-live="polite"><p class="eyebrow">YOUR PERSONAL SNAPSHOT</p><div class="result-heading"><h2 id="risk-label"></h2><span class="pill">Dataset stress label</span></div><p id="primary-caption" class="muted"></p><div id="probabilities" class="probability-list"></div><p class="fine-print">Uncalibrated model probabilities; not clinical confidence.</p><div class="divider"></div><p class="eyebrow">LIFESTYLE PROFILE</p><h3 id="cluster-title"></h3><p id="cluster-description"></p><div class="divider"></div><p class="eyebrow">THREE PERSPECTIVES</p><div id="model-predictions"></div><p id="agreement" class="fine-print"></p></article>
       </div>
       <div id="details" hidden><div class="detail-grid"><article class="card"><p class="eyebrow">YOUR ROUTINE IN CONTEXT</p><h2>Alongside the dataset</h2><p class="muted">Your values compared with training medians. These comparisons do not explain what caused a prediction.</p><div class="table-wrap"><table><thead><tr><th>Input</th><th>You</th><th>Training median</th></tr></thead><tbody id="comparison-rows"></tbody></table></div></article><article class="card"><p class="eyebrow">SPACE TO REFLECT</p><h2>A few things to consider</h2><ul id="suggestions" class="suggestions"></ul><div id="result-notes" class="notice" hidden></div></article></div></div>
+      <div id="recommendations" hidden>
+        <div class="rec-header">
+          <p class="eyebrow">PERSONALISED ACTION PLAN</p>
+          <h2>Your recommendations</h2>
+        </div>
+        <div id="cluster-insight-card" class="card rec-insight-card">
+          <p class="eyebrow">LIFESTYLE CLUSTER INSIGHT</p>
+          <p id="rec-cluster-insight" class="rec-insight-text"></p>
+          <p id="rec-overall-summary" class="muted rec-summary"></p>
+        </div>
+        <div id="rec-actions" class="rec-actions-grid"></div>
+        <p class="fine-print rec-disclaimer">These action prompts are for educational reflection only and are not clinical advice or medical recommendations.</p>
+      </div>
     </section>
     <section id="research-panel" class="panel" hidden><div class="card"><p class="eyebrow">TRANSPARENT BY DESIGN</p><h2>How the models performed</h2><p class="muted">Held-out test results. The primary model is selected using validation macro F1 before evaluating the test set.</p><p id="split-info" class="fine-print"></p><div class="table-wrap"><table><thead><tr><th>Model</th><th>Accuracy</th><th>Macro precision</th><th>Macro recall</th><th>Macro F1</th><th>OVR AUC</th></tr></thead><tbody id="metrics-rows"></tbody></table></div></div><div class="detail-grid"><article class="card"><p class="eyebrow">ACROSS THE DATASET</p><h2>Which inputs matter?</h2><p class="muted">Global permutation importance: the change in validation macro F1 when an input is shuffled. Correlated inputs can share importance.</p><div id="importance-bars"></div></article><article class="card"><p class="eyebrow">NATURAL LIFESTYLE GROUPS</p><h2>Clustering is a separate task</h2><p class="muted">K-Means groups five behavior inputs, without stress labels. Cluster count is selected by silhouette score; IDs do not indicate stress severity.</p><div class="table-wrap"><table><thead><tr><th>Clusters</th><th>Silhouette</th><th>Inertia</th></tr></thead><tbody id="cluster-rows"></tbody></table></div></article></div><article class="card methodology"><p class="eyebrow">WHAT THIS CAN TELL US</p><h2>Keep the context in view</h2><ul id="limitations"></ul></article></section>
     <footer><span class="brand small">MindTrack.</span><p>An educational exploration of lifestyle and stress labels.<br>Built with K-Means · KNN · Logistic Regression · Random Forest.</p><span class="footer-note">Notice. Reflect. Learn.</span></footer>
