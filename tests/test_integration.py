@@ -5,6 +5,7 @@ import pytest
 from fastapi.testclient import TestClient
 from backend.main import create_app
 from backend.predictor import Predictor
+from backend.recommendations import generate_personalized_recommendations
 from ml.clustering import train_clusters
 from ml.evaluate import evaluate_classifiers, global_importance
 from ml.preprocessing import prepare_data, split_data
@@ -57,16 +58,75 @@ def test_api_validates_inputs_and_serves_dashboard(trained):
         assert client.get('/').status_code == 200
         assert client.get('/static/services/app.js').status_code == 200
         assert client.get('/metrics').status_code == 200
-        assert client.post('/predict', json=payload).status_code == 200
+        response = client.post('/predict', json=payload)
+        assert response.status_code == 200
+        data = response.json()
+        assert 'recommendations' in data, 'Expected recommendations key in /predict response'
         for age in (15, 32, 72):
             response = client.post('/predict', json=payload | {'Age': age})
             assert response.status_code == 200
-            assert response.json()['label'] == client.post('/predict', json=payload).json()['label']
+            assert response.json()['label'] == data['label']
         for changes in [{'Age': 12}, {'Sleep_Hours_Per_Night': -1}, {'Daily_Unlocks': 2.5},
                         {'Mental_Health_Score': 8}, {'Most_Used_Platform': '   '}]:
             assert client.post('/predict', json=payload | changes).status_code == 422
         missing = dict(payload); missing.pop('Study_Hours')
         assert client.post('/predict', json=missing).status_code == 422
+
+
+def test_recommendations_in_predict_response(trained):
+    root, path, payload, *_ = trained
+    with TestClient(create_app(root/'models')) as client:
+        data = client.post('/predict', json=payload).json()
+        recs = data.get('recommendations', {})
+        # Top-level keys must be present
+        for key in ('risk_level', 'cluster_id', 'cluster_insight', 'overall_summary', 'actions'):
+            assert key in recs, f'Missing key in recommendations: {key}'
+        # risk_level must match the prediction label
+        assert recs['risk_level'] == data['label']
+        # cluster_id must match cluster.id
+        assert recs['cluster_id'] == data['cluster']['id']
+        # actions must be a non-empty list with valid structure
+        assert isinstance(recs['actions'], list)
+        assert len(recs['actions']) > 0, 'Expected at least one action item'
+        valid_priorities = {'High', 'Medium', 'Low'}
+        for action in recs['actions']:
+            for field in ('category', 'priority', 'title', 'description', 'action'):
+                assert field in action, f'Action missing field: {field}'
+            assert action['priority'] in valid_priorities, f'Unexpected priority: {action["priority"]}'
+
+
+def test_generate_personalized_recommendations_unit():
+    """Unit-test the engine without a trained model."""
+    # Very High risk, high screen time, low sleep, high unlocks
+    user_input = {
+        'Sleep_Hours_Per_Night': 5.0,
+        'Avg_Daily_Usage_Hours': 8.0,
+        'Daily_Unlocks': 120,
+        'Physical_Activity_Hours': 0.2,
+        'Study_Hours': 10.0,
+    }
+    result = generate_personalized_recommendations(user_input, 'Very High', 1)
+    assert result['risk_level'] == 'Very High'
+    assert result['cluster_id'] == 1
+    assert 'High Screen Time' in result['cluster_insight']
+    assert len(result['actions']) >= 5  # sleep, screen, unlocks, activity, study + tips
+    priorities = [a['priority'] for a in result['actions']]
+    assert 'High' in priorities
+
+    # Low risk, all values fine
+    good_input = {
+        'Sleep_Hours_Per_Night': 7.5,
+        'Avg_Daily_Usage_Hours': 2.0,
+        'Daily_Unlocks': 40,
+        'Physical_Activity_Hours': 1.0,
+        'Study_Hours': 5.0,
+    }
+    result_low = generate_personalized_recommendations(good_input, 'Low', 0)
+    assert result_low['risk_level'] == 'Low'
+    assert 'Balanced' in result_low['cluster_insight']
+    # Only cluster tips — all Low priority
+    flagged_categories = {a['category'] for a in result_low['actions'] if a['category'] != 'Lifestyle Tip'}
+    assert len(flagged_categories) == 0
 
 
 def test_unseen_platform_warns_without_breaking_inference(trained):
