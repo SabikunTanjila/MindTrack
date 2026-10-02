@@ -57,8 +57,75 @@ function resetForm() {
   metadata.numeric_features.forEach(name=>{ $(name).value=['Age','Daily_Unlocks'].includes(name)?Math.round(metadata.medians[name]):Number(metadata.medians[name]).toFixed(1); });
   metadata.categorical_features.forEach(name=>{ $(name).selectedIndex=0; });
   if (metadata.categories.Academic_Level.includes('Undergraduate')) $('Academic_Level').value='Undergraduate';
-  $('error').hidden=true; $('result').hidden=true; $('details').hidden=true; $('empty-result').hidden=false;
+  $('error').hidden=true; $('result').hidden=true; $('details').hidden=true;
+  $('recommendations').hidden=true; $('empty-result').hidden=false;
 }
+
+/**
+ * Render a single action card into the given parent element.
+ * @param {HTMLElement} parent
+ * @param {{category:string, priority:string, title:string, description:string, action:string}} item
+ */
+function buildActionCard(parent, item) {
+  const card = document.createElement('article');
+  card.className = 'rec-card';
+  card.setAttribute('aria-label', `${item.priority} priority: ${item.title}`);
+
+  // Priority badge
+  const badge = document.createElement('span');
+  badge.className = `rec-badge ${item.priority}`;
+  const dot = document.createElement('span'); dot.className = 'rec-badge-dot'; dot.setAttribute('aria-hidden', 'true');
+  badge.append(dot, `${item.priority.toUpperCase()} PRIORITY`);
+
+  // Category label
+  const category = document.createElement('p');
+  category.className = 'rec-category';
+  category.textContent = item.category;
+
+  // Title
+  const title = document.createElement('h3');
+  title.className = 'rec-title';
+  title.textContent = item.title;
+
+  // Description
+  const desc = document.createElement('p');
+  desc.className = 'rec-desc';
+  desc.textContent = item.description;
+
+  // Action box
+  const actionBox = document.createElement('div');
+  actionBox.className = 'rec-action';
+  const actionLabel = document.createElement('p');
+  actionLabel.className = 'rec-action-label';
+  actionLabel.textContent = '↳ SUGGESTED ACTION';
+  const actionText = document.createElement('p');
+  actionText.style.margin = '0';
+  actionText.textContent = item.action;
+  actionBox.append(actionLabel, actionText);
+
+  card.append(badge, category, title, desc, actionBox);
+  parent.append(card);
+}
+
+/**
+ * Render the full personalised recommendations section.
+ * @param {{risk_level:string, cluster_id:number, cluster_insight:string, overall_summary:string, actions:Array}} recs
+ */
+function displayRecommendations(recs) {
+  if (!recs || !Array.isArray(recs.actions)) return;
+
+  // Cluster insight & summary
+  $('rec-cluster-insight').textContent = recs.cluster_insight || '';
+  $('rec-overall-summary').textContent = recs.overall_summary || '';
+
+  // Build action cards
+  const grid = $('rec-actions');
+  grid.replaceChildren();
+  recs.actions.forEach(item => buildActionCard(grid, item));
+
+  $('recommendations').hidden = false;
+}
+
 function renderResult(data) {
   $('empty-result').hidden=true; $('result').hidden=false; $('details').hidden=false;
   $('risk-label').textContent=data.label; $('risk-label').style.color=colors[data.label];
@@ -72,6 +139,8 @@ function renderResult(data) {
   $('comparison-rows').replaceChildren(); data.comparisons.forEach(item=>appendRow($('comparison-rows'),[item.name,format(item.value),format(item.training_median)]));
   $('suggestions').replaceChildren(); data.suggestions.forEach(text=>{const li=document.createElement('li');li.textContent=text;$('suggestions').append(li);});
   $('result-notes').textContent=data.notes.join(' '); $('result-notes').hidden=!data.notes.length;
+  // Render personalised recommendations if present
+  if (data.recommendations) displayRecommendations(data.recommendations);
   $('result').scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 function renderResearch(metrics) {
@@ -92,7 +161,7 @@ $('assessment-form').addEventListener('submit',async event=>{
   const payload={}; metadata.numeric_features.forEach(name=>payload[name]=Number($(name).value)); metadata.categorical_features.forEach(name=>payload[name]=$(name).value);
   $('fields').disabled=true; $('analyze').textContent='Analyzing your routine…';
   try {renderResult(await api('predict',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}));}
-  catch(error){showError(error.message); $('result').hidden=true; $('details').hidden=true; $('empty-result').hidden=false;}
+  catch(error){showError(error.message); $('result').hidden=true; $('details').hidden=true; $('recommendations').hidden=true; $('empty-result').hidden=false;}
   finally{$('fields').disabled=false;$('analyze').textContent='Explore my patterns ↗';}
 });
 (async()=>{try{const [info,metrics]=await Promise.all([api('model-info'),api('metrics')]);metadata=info;buildForm();renderResearch(metrics);$('loading').hidden=true;}catch(error){$('loading').hidden=true;showError(error.message+' Run python train_local.py and restart the local server if the model is missing.');}})();

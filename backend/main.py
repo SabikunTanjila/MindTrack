@@ -7,6 +7,7 @@ from fastapi.responses import FileResponse, HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 
 from backend.predictor import Predictor
+from backend.recommendations import generate_personalized_recommendations
 from backend.schemas import Assessment
 from ml.config import ROOT
 
@@ -48,7 +49,17 @@ def create_app(model_dir=None):
 
     @application.post('/predict')
     def predict(assessment: Assessment):
-        return ready().predict(assessment)
+        result = ready().predict(assessment)
+        # Enrich with personalised recommendations
+        predicted_risk = result.get('label', 'Low')
+        cluster_id = result.get('cluster', {}).get('id', 0)
+        recommendations = generate_personalized_recommendations(
+            user_input=assessment.model_dump(),
+            predicted_risk=predicted_risk,
+            cluster_id=cluster_id,
+        )
+        result['recommendations'] = recommendations
+        return result
 
     frontend = ROOT / 'frontend'
     if frontend.is_dir():
@@ -64,7 +75,7 @@ def create_app(model_dir=None):
 
         @application.get('/static/services/app.js', include_in_schema=False)
         def script_fallback():
-            return Response('// Dashboard assets are embedded in the Colab notebook.\n',
+            return Response('// MindTrack dashboard assets are served by FastAPI.\n',
                             media_type='application/javascript')
 
     return application
