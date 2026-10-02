@@ -13,7 +13,9 @@ class Predictor:
     def __init__(self, path):
         path = Path(path)
         if not path.is_file():
-            raise FileNotFoundError('Train and export models in the Colab notebook first.')
+            raise FileNotFoundError(
+                'Model bundle not found. Run "python train_local.py" locally or export it from Colab.'
+            )
         bundle = joblib.load(path)
         if bundle['metadata'].get('artifact_version') != 2:
             raise ValueError('Unsupported artifact version. Rerun training and export for broad-age support.')

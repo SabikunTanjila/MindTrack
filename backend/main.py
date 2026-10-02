@@ -18,14 +18,20 @@ def create_app(model_dir=None):
                           description='Educational lifestyle and stress-label assessment.')
     try:
         predictor = Predictor(model_dir / 'mindtrack.joblib')
-    except (FileNotFoundError, ValueError, KeyError, EOFError, ImportError, OSError):
+    except FileNotFoundError as exc:
+        logging.warning('%s', exc)
+        predictor = None
+    except (ValueError, KeyError, EOFError, ImportError, OSError):
         logging.exception('MindTrack model loading failed')
         predictor = None
     application.state.predictor = predictor
 
     def ready():
         if application.state.predictor is None:
-            raise HTTPException(status_code=503, detail='Models unavailable. Complete the training and export cells, then restart the API cell.')
+            raise HTTPException(
+                status_code=503,
+                detail='Model unavailable. Run "python train_local.py", then restart the server.',
+            )
         return application.state.predictor
 
     @application.get('/health')
