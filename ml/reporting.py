@@ -11,8 +11,9 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 from sklearn.metrics import ConfusionMatrixDisplay
-from ml.config import (BOUNDS, CATEGORICAL, DISPLAY_NAMES, EXCLUDED, FEATURES,
-                       LABELS, NUMERIC, SEED, TARGET)
+from ml.config import (BOUNDS, CATEGORICAL, CATEGORY_ALIASES, DISPLAY_NAMES,
+                       EXCLUDED, FEATURES, LABELS, MODEL_FEATURES, NUMERIC, SEED,
+                       TARGET)
 
 
 def save_json(path, value):
@@ -121,9 +122,11 @@ def export_artifacts(training, clustering, evaluation, importance, splits, audit
     metrics_dir.mkdir(parents=True, exist_ok=True)
     train = splits['X_train']
     metadata = {
-        'artifact_version': 1, 'created_utc': datetime.now(timezone.utc).isoformat(),
+        'artifact_version': 2, 'created_utc': datetime.now(timezone.utc).isoformat(),
         'seed': SEED, 'labels': LABELS, 'features': FEATURES,
+        'model_features': MODEL_FEATURES,
         'numeric_features': NUMERIC, 'categorical_features': CATEGORICAL,
+        'category_aliases': CATEGORY_ALIASES,
         'display_names': DISPLAY_NAMES, 'bounds': BOUNDS, 'excluded_columns': EXCLUDED + [TARGET],
         'primary_model': training['primary_model'], 'selection_rule': 'Highest validation macro F1',
         'selection': training['selection'].to_dict(orient='records'),
@@ -141,7 +144,8 @@ def export_artifacts(training, clustering, evaluation, importance, splits, audit
         'limitations': [
             'Educational estimates of dataset labels, not a clinical assessment.',
             'Dataset source, license, collection method, and synthetic status are unverified.',
-            'The dataset covers ages 18–24; performance outside this cohort is untested.',
+            'Age is accepted for validation and reporting but excluded from prediction because training ages cover only 18-24.',
+            'Performance across demographic age groups remains unverified without representative labeled data.',
             'Probabilities are uncalibrated model outputs.',
             'Study and physical-activity time windows need source confirmation.',
             'Global feature importance and input comparisons do not establish individual causes.',

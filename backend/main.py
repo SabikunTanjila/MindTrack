@@ -1,9 +1,11 @@
-"""FastAPI and dashboard, hosted by the Colab runtime."""
+"""FastAPI application used by the MindTrack dashboard."""
 import logging
 from pathlib import Path
+
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
+
 from backend.predictor import Predictor
 from backend.recommendations import generate_personalized_recommendations
 from backend.schemas import Assessment
@@ -12,7 +14,7 @@ from ml.config import ROOT
 
 def create_app(model_dir=None):
     model_dir = Path(model_dir or ROOT / 'models')
-    application = FastAPI(title='MindTrack', version='1.0.0',
+    application = FastAPI(title='MindTrack', version='2.0.0',
                           description='Educational lifestyle and stress-label assessment.')
     try:
         predictor = Predictor(model_dir / 'mindtrack.joblib')
@@ -23,7 +25,7 @@ def create_app(model_dir=None):
 
     def ready():
         if application.state.predictor is None:
-            raise HTTPException(status_code=503, detail='Models unavailable. Complete the training and export cells, then restart the Colab API cell.')
+            raise HTTPException(status_code=503, detail='Models unavailable. Complete the training and export cells, then restart the API cell.')
         return application.state.predictor
 
     @application.get('/health')
@@ -54,10 +56,20 @@ def create_app(model_dir=None):
         return result
 
     frontend = ROOT / 'frontend'
-    application.mount('/static', StaticFiles(directory=frontend / 'src'), name='static')
+    if frontend.is_dir():
+        application.mount('/static', StaticFiles(directory=frontend / 'src'), name='static')
 
-    @application.get('/', include_in_schema=False)
-    def dashboard():
-        return FileResponse(frontend / 'index.html')
+        @application.get('/', include_in_schema=False)
+        def dashboard():
+            return FileResponse(frontend / 'index.html')
+    else:
+        @application.get('/', include_in_schema=False)
+        def dashboard_fallback():
+            return HTMLResponse('<!doctype html><title>MindTrack</title><h1>MindTrack API is ready</h1>')
+
+        @application.get('/static/services/app.js', include_in_schema=False)
+        def script_fallback():
+            return Response('// MindTrack dashboard assets are served by FastAPI.\n',
+                            media_type='application/javascript')
 
     return application

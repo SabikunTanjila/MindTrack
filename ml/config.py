@@ -9,8 +9,25 @@ NUMERIC = ['Age', 'Avg_Daily_Usage_Hours', 'Daily_Unlocks', 'Study_Hours',
            'Physical_Activity_Hours', 'Sleep_Hours_Per_Night']
 CATEGORICAL = ['Academic_Level', 'Most_Used_Platform', 'Purpose_Of_Use']
 FEATURES = NUMERIC + CATEGORICAL
+# The available training data only contains ages 18-24.  Keep Age in the input
+# contract for validation and reporting, but do not let a model trained on that
+# narrow cohort extrapolate an age effect to children or older adults.
+MODEL_FEATURES = NUMERIC[1:] + CATEGORICAL
 CLUSTER_FEATURES = NUMERIC[1:]
-BOUNDS = {'Age': (18, 24), 'Avg_Daily_Usage_Hours': (0, 24),
+# Shared validation contract used by model logic, backend requests, and UI forms.
+# Age is not restricted to 18-24; any realistic year is accepted.
+AGE_MIN = 13
+AGE_MAX = 120
+AGE_RANGE = (AGE_MIN, AGE_MAX)
+CATEGORY_ALIASES = {
+    'Academic_Level': {'Postgraduate': 'Graduate'},
+    'Purpose_Of_Use': {
+        'Academic': 'Education',
+        'Social': 'Networking',
+        'Browsing': 'News',
+    },
+}
+BOUNDS = {'Age': AGE_RANGE, 'Avg_Daily_Usage_Hours': (0, 24),
           'Daily_Unlocks': (0, 2000), 'Study_Hours': (0, 24),
           'Physical_Activity_Hours': (0, 24), 'Sleep_Hours_Per_Night': (0, 24)}
 DISPLAY_NAMES = {'Age': 'Age', 'Avg_Daily_Usage_Hours': 'Daily social-media hours',

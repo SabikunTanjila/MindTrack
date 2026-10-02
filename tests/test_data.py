@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import pytest
 from ml.preprocessing import FeatureCleaner, make_preprocessor, prepare_data, split_data
-from ml.config import FEATURES
+from ml.config import FEATURES, MODEL_FEATURES
 
 
 def row(**changes):
@@ -55,6 +55,36 @@ def test_unknown_targets_fail_instead_of_silent_remapping():
 def test_missing_feature_column_is_actionable():
     with pytest.raises(ValueError, match='Sleep_Hours_Per_Night'):
         prepare_data(pd.DataFrame([row()]).drop(columns=['Sleep_Hours_Per_Night']))
+
+
+def test_age_accepts_values_beyond_the_18_24_cohort():
+    frame = pd.DataFrame([row(Age=15), row(Age=32), row(Age=72)])
+    cleaned, _ = prepare_data(frame)
+    assert cleaned['Age'].tolist() == [15, 32, 72]
+
+
+def test_default_model_preprocessing_does_not_extrapolate_age_effects():
+    training = pd.DataFrame([row(Age=18), row(Age=24, Daily_Unlocks=150)])
+    pipe = make_preprocessor().fit(training)
+    younger = pd.DataFrame([row(Age=15)])
+    older = pd.DataFrame([row(Age=72)])
+    np.testing.assert_allclose(pipe.transform(younger), pipe.transform(older))
+    assert 'Age' not in MODEL_FEATURES
+
+
+def test_external_category_vocabulary_is_normalized():
+    frame = pd.DataFrame([row(Academic_Level='Postgraduate', Purpose_Of_Use='Academic'),
+                          row(Academic_Level='Graduate', Purpose_Of_Use='Education')])
+    cleaned = FeatureCleaner().transform(frame)
+    assert cleaned.loc[0, 'Academic_Level'] == cleaned.loc[1, 'Academic_Level'] == 'Graduate'
+    assert cleaned.loc[0, 'Purpose_Of_Use'] == cleaned.loc[1, 'Purpose_Of_Use'] == 'Education'
+
+
+def test_builtin_test_csv_is_processable_and_has_valid_age_range():
+    frame = pd.read_csv('MindTrack_test.csv')
+    cleaned, _ = prepare_data(frame)
+    assert not cleaned.empty
+    assert cleaned['Age'].between(0, 120).all()
 
 
 def test_splits_are_disjoint_and_preserve_four_classes():

@@ -4,7 +4,8 @@ import pandas as pd
 from sklearn.inspection import permutation_importance
 from sklearn.metrics import (accuracy_score, balanced_accuracy_score, classification_report,
     confusion_matrix, f1_score, precision_score, recall_score, roc_auc_score)
-from ml.config import FEATURES, LABELS, SEED
+from ml.config import FEATURES, LABELS, SEED, TARGET
+from ml.preprocessing import prepare_data
 
 
 def classification_metrics(model, X, y):
@@ -29,6 +30,19 @@ def evaluate_classifiers(training, splits):
     models = dict(training['models']) | {'Majority baseline': training['baseline']}
     return {name: classification_metrics(model, splits['X_test'], splits['y_test'])
             for name, model in models.items()}
+
+
+def evaluate_on_dataframe(training, frame):
+    """Evaluate fitted models on any dataframe that matches the project schema."""
+    prepared, _ = prepare_data(frame)
+    X = prepared[FEATURES]
+    y = prepared[TARGET]
+    models = dict(training['models']) | {'Majority baseline': training['baseline']}
+    return {name: classification_metrics(model, X, y) for name, model in models.items()}
+
+
+def evaluate_on_csv(training, path):
+    return evaluate_on_dataframe(training, pd.read_csv(path))
 
 
 def global_importance(training, splits, repeats=5):

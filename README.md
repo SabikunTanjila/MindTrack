@@ -59,7 +59,8 @@ requirements.txt             Colab dependencies
 ## Dataset and interpretation
 
 The CSV has 5,000 records, 13 columns, 2 exact duplicates, and 10 negative
-physical-activity values. Ages range from 18 to 24. Source, license, collection
+physical-activity values. The model accepts ages across the full adult range
+instead of artificially restricting inputs to 18–24. Source, license, collection
 method, and synthetic status are unverified. Study/activity time windows also
 require source confirmation.
 
@@ -67,6 +68,46 @@ Mental_Health_Score and the target are excluded from model inputs. Gender and
 country are omitted. K-Means groups are lifestyle profiles, not stress classes.
 Model probabilities are uncalibrated. This is an educational estimate of dataset
 labels, not a clinical assessment. See [dataset notes](docs/dataset-notes.md).
+
+## Age validation policy
+
+The shared validation contract used by the model, API, and UI must not reject
+users just because they are outside the old 18–24 cohort. The project now uses:
+
+```python
+from ml.config import AGE_MIN, AGE_MAX
+print(AGE_MIN, AGE_MAX)  # 13 120
+```
+
+That means adolescent and adult ages outside the original cohort are accepted by
+the application logic, and the front-end form validation and backend request
+validation use the same `AGE_MIN` and `AGE_MAX` values rather than hard-coded
+`18` / `24` checks. Because the available training file contains only ages
+18-24, age is retained for validation and reporting but excluded from the model
+features. This prevents unsupported age extrapolation; verified age-specific
+performance still requires representative labeled data from those age groups.
+
+## External test dataset evaluation
+
+The project can evaluate a held-out external Excel dataset without changing the
+training methodology. The dataset is only used after the model has already been
+trained and selected:
+
+```python
+python external_test_evaluation.py --data /mnt/data/MindTrack_Test_Dataset.xlsx
+```
+
+This script:
+- loads the saved trained artifact if present
+- trains the project pipeline if no artifact is available yet
+- validates required columns and labels
+- normalizes equivalent category names used by the new dataset (for example,
+  `Postgraduate` to `Graduate` and `Academic` to `Education`)
+- applies the fitted preprocessing logic already learned during training
+- scores the model on the unseen external dataset
+- saves prediction results and classification metrics
+
+The pipeline does not fit a new scaler or encoder on the external test data.
 
 ## Verification
 
