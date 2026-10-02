@@ -18,7 +18,7 @@ async function api(path, options = {}) {
     }
     return data;
   } catch (error) {
-    if (error.name === 'AbortError') throw new Error('The request timed out. Check that your Colab runtime and API cell are still running.');
+    if (error.name === 'AbortError') throw new Error('The request timed out. Check that the MindTrack server is still running.');
     throw error;
   } finally { clearTimeout(timer); }
 }
@@ -95,4 +95,4 @@ $('assessment-form').addEventListener('submit',async event=>{
   catch(error){showError(error.message); $('result').hidden=true; $('details').hidden=true; $('empty-result').hidden=false;}
   finally{$('fields').disabled=false;$('analyze').textContent='Explore my patterns ↗';}
 });
-(async()=>{try{const [info,metrics]=await Promise.all([api('model-info'),api('metrics')]);metadata=info;buildForm();renderResearch(metrics);$('loading').hidden=true;}catch(error){$('loading').hidden=true;showError(error.message+' Rerun the Colab training/export and API cells if needed.');}})();
+(async()=>{try{const [info,metrics]=await Promise.all([api('model-info'),api('metrics')]);metadata=info;buildForm();renderResearch(metrics);$('loading').hidden=true;}catch(error){$('loading').hidden=true;showError(error.message+' Run python train_local.py and restart the local server if the model is missing.');}})();

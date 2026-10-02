@@ -3,6 +3,32 @@
 A project for lifestyle clustering and prediction of four dataset stress
 labels: **Low, Medium, High, Very High**.
 
+## Run locally
+
+Use Python 3.11 or 3.12 from the project directory. Do not reuse a copied
+`.venv`; virtual environments contain machine-specific interpreter paths.
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python run.py 8000
+```
+
+Open <http://127.0.0.1:8000>. The first launch trains and saves
+`models/mindtrack.joblib` from `mental_health_dataset.csv`; later launches load
+that artifact directly. To use a different port, pass it as the first argument
+or use `--port`, for example `python run.py --port 8080`. Useful options are:
+
+- `--quick-train` for a faster development model on the first launch.
+- `--retrain` to replace an existing model bundle.
+- `--reload` to restart the server when source files change.
+- `--host 0.0.0.0` to make the server reachable from other devices on the LAN.
+
+If PowerShell reports that the existing virtual environment points to a missing
+Python executable, remove that local `.venv` directory and create it again with
+the commands above. The `.venv` folder is ignored by Git.
+
 ## Run in Google Colab
 
 1. Open [Google Colab](https://colab.research.google.com/).
@@ -48,6 +74,8 @@ ml/reporting.py              Plots, metadata, artifact export
 ml/writeup.py                Report and presentation notes from measured results
 backend/                     Schemas, inference, suggestions, FastAPI
 frontend/                    HTML/CSS/JavaScript dashboard
+run.py                       Local server launcher with configurable port
+train_local.py               Local model training and artifact export
 tests/                       Data and integrated model/API tests
 models/                      Fitted artifacts generated in Colab
 reports/                     Generated figures and metrics
