@@ -24,14 +24,18 @@ class ActionItem(BaseModel):
     category: str
     priority: Literal['High', 'Medium', 'Low']
     title: str
+    reason: str
     description: str
     action: str
+    source_feature: str | None
+    observed_value: float | None
+    threshold_value: float | None
 
 
 class RecommendationResponse(BaseModel):
     """Personalised recommendations returned alongside the prediction."""
-    risk_level: str
-    cluster_id: int
-    cluster_insight: str
-    overall_summary: str
-    actions: List[ActionItem]
+    predicted_risk: str
+    threshold_source: str
+    summary: str
+    items: List[ActionItem]
+    disclaimer: str

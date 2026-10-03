@@ -14,6 +14,7 @@ from sklearn.metrics import ConfusionMatrixDisplay
 from ml.config import (BOUNDS, CATEGORICAL, CATEGORY_ALIASES, DISPLAY_NAMES,
                        EXCLUDED, FEATURES, LABELS, MODEL_FEATURES, NUMERIC, SEED,
                        TARGET)
+from ml.recommendation import build_recommendation_thresholds
 
 
 def save_json(path, value):
@@ -132,6 +133,7 @@ def export_artifacts(training, clustering, evaluation, importance, splits, audit
         'selection': training['selection'].to_dict(orient='records'),
         'categories': {c: sorted(train[c].dropna().unique().tolist()) for c in CATEGORICAL},
         'medians': train[NUMERIC].median().to_dict(),
+        'recommendation_thresholds': build_recommendation_thresholds(train),
         'training_ranges': {c: [float(train[c].min()), float(train[c].max())] for c in NUMERIC},
         'split_sizes': {s: len(splits[f'X_{s}']) for s in ('train', 'val', 'test')},
         'cluster_count': clustering['best_k'], 'cluster_descriptions': clustering['descriptions'],

@@ -34,13 +34,17 @@ function bar(parent, label, value, caption, color='#669884') {
   track.append(fill); row.append(header,track); parent.append(row);
 }
 function buildForm() {
+  const inputTotal=metadata.numeric_features.length+metadata.categorical_features.length;
+  $('input-count').textContent=`${inputTotal} inputs`;
+  const accepted=metadata.bounds.Age; const observed=metadata.training_ranges.Age;
+  $('cohort-note').textContent=`Accepted ages ${accepted[0]}–${accepted[1]} · training ages ${format(observed[0])}–${format(observed[1])}`;
   metadata.numeric_features.forEach(name => {
     const wrapper=document.createElement('div'); wrapper.className='field';
     const label=document.createElement('label'); label.htmlFor=name; label.textContent=metadata.display_names[name];
     const input=document.createElement('input'); input.id=name; input.name=name; input.type='number'; input.required=true;
     [input.min,input.max]=metadata.bounds[name]; input.step=['Age','Daily_Unlocks'].includes(name)?'1':'0.1';
     const help=document.createElement('small'); help.id=`${name}-help`;
-    help.textContent=name==='Age'?'Accepted: ages 13–120; training cohort: 18–24': ['Study_Hours','Physical_Activity_Hours'].includes(name)?'Hours as recorded in the dataset':'Typical daily value';
+    help.textContent=name==='Age'?`Accepted ${metadata.bounds.Age[0]}–${metadata.bounds.Age[1]}; training data ${format(metadata.training_ranges.Age[0])}–${format(metadata.training_ranges.Age[1])}`:['Study_Hours','Physical_Activity_Hours'].includes(name)?'Hours as recorded; source period is undocumented':'Typical recorded value';
     input.setAttribute('aria-describedby',help.id); wrapper.append(label,input,help); $('numeric-fields').append(wrapper);
   });
   metadata.categorical_features.forEach(name => {
@@ -64,7 +68,7 @@ function resetForm() {
 /**
  * Render a single action card into the given parent element.
  * @param {HTMLElement} parent
- * @param {{category:string, priority:string, title:string, description:string, action:string}} item
+ * @param {{category:string, priority:string, title:string, reason:string, action:string}} item
  */
 function buildActionCard(parent, item) {
   const card = document.createElement('article');
@@ -87,41 +91,43 @@ function buildActionCard(parent, item) {
   title.className = 'rec-title';
   title.textContent = item.title;
 
-  // Description
+  // Plain-language reason
+  const reasonLabel = document.createElement('p');
+  reasonLabel.className = 'rec-action-label';
+  reasonLabel.textContent = 'WHY THIS WAS SUGGESTED';
   const desc = document.createElement('p');
   desc.className = 'rec-desc';
-  desc.textContent = item.description;
+  desc.textContent = item.reason;
 
   // Action box
   const actionBox = document.createElement('div');
   actionBox.className = 'rec-action';
   const actionLabel = document.createElement('p');
   actionLabel.className = 'rec-action-label';
-  actionLabel.textContent = '↳ SUGGESTED ACTION';
+  actionLabel.textContent = 'TRY THIS';
   const actionText = document.createElement('p');
   actionText.style.margin = '0';
   actionText.textContent = item.action;
   actionBox.append(actionLabel, actionText);
 
-  card.append(badge, category, title, desc, actionBox);
+  card.append(badge, category, title, reasonLabel, desc, actionBox);
   parent.append(card);
 }
 
 /**
  * Render the full personalised recommendations section.
- * @param {{risk_level:string, cluster_id:number, cluster_insight:string, overall_summary:string, actions:Array}} recs
+ * @param {{predicted_risk:string, threshold_source:string, summary:string, items:Array, disclaimer:string}} recs
  */
 function displayRecommendations(recs) {
-  if (!recs || !Array.isArray(recs.actions)) return;
+  if (!recs || !Array.isArray(recs.items)) return;
 
-  // Cluster insight & summary
-  $('rec-cluster-insight').textContent = recs.cluster_insight || '';
-  $('rec-overall-summary').textContent = recs.overall_summary || '';
+  $('rec-summary').textContent = recs.summary || '';
+  $('rec-disclaimer').textContent = recs.disclaimer || '';
 
   // Build action cards
   const grid = $('rec-actions');
   grid.replaceChildren();
-  recs.actions.forEach(item => buildActionCard(grid, item));
+  recs.items.forEach(item => buildActionCard(grid, item));
 
   $('recommendations').hidden = false;
 }
@@ -137,11 +143,14 @@ function renderResult(data) {
   $('model-predictions').replaceChildren(); data.models.forEach(item=>{ const row=document.createElement('div'); row.className='model-row'; const name=document.createElement('span'); name.textContent=item.model; const value=document.createElement('strong'); value.textContent=item.label; row.append(name,value); $('model-predictions').append(row); });
   $('agreement').textContent=`${data.agreement} of ${data.models.length} models agree with the primary estimate. Agreement does not establish correctness.`;
   $('comparison-rows').replaceChildren(); data.comparisons.forEach(item=>appendRow($('comparison-rows'),[item.name,format(item.value),format(item.training_median)]));
-  $('suggestions').replaceChildren(); data.suggestions.forEach(text=>{const li=document.createElement('li');li.textContent=text;$('suggestions').append(li);});
   $('result-notes').textContent=data.notes.join(' '); $('result-notes').hidden=!data.notes.length;
   // Render personalised recommendations if present
-  if (data.recommendations) displayRecommendations(data.recommendations);
-  $('result').scrollIntoView({behavior:'smooth',block:'nearest'});
+  if (data.recommendations) {
+    displayRecommendations(data.recommendations);
+    $('recommendations').scrollIntoView({behavior:'smooth',block:'start'});
+  } else {
+    $('result').scrollIntoView({behavior:'smooth',block:'nearest'});
+  }
 }
 function renderResearch(metrics) {
   const split=metadata.split_sizes; $('split-info').textContent=`${split.train.toLocaleString()} training / ${split.val.toLocaleString()} validation / ${split.test.toLocaleString()} test records · Seed ${metadata.seed} · Primary model: ${metadata.primary_model}`;
@@ -164,4 +173,4 @@ $('assessment-form').addEventListener('submit',async event=>{
   catch(error){showError(error.message); $('result').hidden=true; $('details').hidden=true; $('recommendations').hidden=true; $('empty-result').hidden=false;}
   finally{$('fields').disabled=false;$('analyze').textContent='Explore my patterns ↗';}
 });
-(async()=>{try{const [info,metrics]=await Promise.all([api('model-info'),api('metrics')]);metadata=info;buildForm();renderResearch(metrics);$('loading').hidden=true;}catch(error){$('loading').hidden=true;showError(error.message+' Run python train_local.py and restart the local server if the model is missing.');}})();
+(async()=>{try{const [info,metrics]=await Promise.all([api('model-info'),api('metrics')]);metadata=info;buildForm();renderResearch(metrics);$('loading').hidden=true;}catch(error){$('loading').hidden=true;showError(error.message+' Train or export the model, then restart the server or API cell.');}})();

@@ -7,6 +7,7 @@ import pandas as pd
 from backend.recommendations import suggestions
 from backend.schemas import Assessment
 from ml.config import CATEGORY_ALIASES, DISPLAY_NAMES, LABELS, NUMERIC
+from ml.recommendation import DEFAULT_THRESHOLDS
 
 
 class Predictor:
@@ -23,6 +24,10 @@ class Predictor:
         self.cluster_pipeline = bundle['cluster_pipeline']
         self.metadata = bundle['metadata']
         self.evaluation = bundle['evaluation']
+        self.labels = [str(label) for label in self.metadata.get('labels', LABELS)]
+        self.recommendation_thresholds = self.metadata.get(
+            'recommendation_thresholds', DEFAULT_THRESHOLDS,
+        )
 
     def predict(self, assessment):
         if not isinstance(assessment, Assessment):
@@ -34,7 +39,7 @@ class Predictor:
             scores = dict(zip(pipeline.classes_, pipeline.predict_proba(frame)[0]))
             label = str(pipeline.predict(frame)[0])
             results.append({'model': name, 'label': label,
-                            'probabilities': {key: float(scores[key]) for key in LABELS}})
+                            'probabilities': {key: float(scores[key]) for key in self.labels}})
         primary = next(r for r in results if r['model'] == self.metadata['primary_model'])
         cluster_id = int(self.cluster_pipeline.predict(frame)[0])
         comparisons = [{'feature': column, 'name': DISPLAY_NAMES[column], 'value': values[column],

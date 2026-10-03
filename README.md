@@ -54,6 +54,9 @@ See [the step-by-step Colab guide](docs/colab-guide.md).
 - Majority baseline, confusion matrices, multiclass AUC, and other metrics.
 - Global permutation importance and input/median comparisons.
 - FastAPI health, model-info, metrics, and prediction endpoints.
+- Input-based recommendations for sleep, screen use, phone interruptions,
+  physical activity, and study balance. Thresholds are calculated from the
+  training partition and stored with newly exported model artifacts.
 - Responsive assessment/results/research dashboard served inside Colab.
 - Behavior tests and downloadable fitted models, metrics, plots, and versions.
 - A generated lab report and presentation notes using the run's actual results.
@@ -71,6 +74,7 @@ ml/clustering.py             K-Means selection and PCA
 ml/train.py                  Tuning and validation selection
 ml/evaluate.py               Holdout metrics and global importance
 ml/reporting.py              Plots, metadata, artifact export
+ml/recommendation.py         Training-derived recommendation thresholds and rules
 ml/writeup.py                Report and presentation notes from measured results
 backend/                     Schemas, inference, suggestions, FastAPI
 frontend/                    HTML/CSS/JavaScript dashboard
