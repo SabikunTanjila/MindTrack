@@ -78,21 +78,20 @@ def test_recommendations_in_predict_response(trained):
     with TestClient(create_app(root/'models')) as client:
         data = client.post('/predict', json=payload).json()
         recs = data.get('recommendations', {})
-        # Top-level keys must be present
-        for key in ('risk_level', 'cluster_id', 'cluster_insight', 'overall_summary', 'actions'):
+        for key in ('predicted_risk', 'threshold_source', 'summary', 'items', 'disclaimer'):
             assert key in recs, f'Missing key in recommendations: {key}'
-        # risk_level must match the prediction label
-        assert recs['risk_level'] == data['label']
-        # cluster_id must match cluster.id
-        assert recs['cluster_id'] == data['cluster']['id']
-        # actions must be a non-empty list with valid structure
-        assert isinstance(recs['actions'], list)
-        assert len(recs['actions']) > 0, 'Expected at least one action item'
+        assert recs['predicted_risk'] == data['label']
+        assert recs['threshold_source'] == 'training_split_quantiles'
+        assert isinstance(recs['items'], list)
+        assert 1 <= len(recs['items']) <= 6
         valid_priorities = {'High', 'Medium', 'Low'}
-        for action in recs['actions']:
-            for field in ('category', 'priority', 'title', 'description', 'action'):
+        for action in recs['items']:
+            for field in ('category', 'priority', 'title', 'reason', 'action',
+                          'source_feature', 'observed_value', 'threshold_value'):
                 assert field in action, f'Action missing field: {field}'
             assert action['priority'] in valid_priorities, f'Unexpected priority: {action["priority"]}'
+        categories = [action['category'] for action in recs['items']]
+        assert len(categories) == len(set(categories))
 
 
 def test_generate_personalized_recommendations_unit():
@@ -108,8 +107,7 @@ def test_generate_personalized_recommendations_unit():
     result = generate_personalized_recommendations(user_input, 'Very High', 1)
     assert result['risk_level'] == 'Very High'
     assert result['cluster_id'] == 1
-    assert 'High Screen Time' in result['cluster_insight']
-    assert len(result['actions']) >= 5  # sleep, screen, unlocks, activity, study + tips
+    assert 1 <= len(result['actions']) <= 5
     priorities = [a['priority'] for a in result['actions']]
     assert 'High' in priorities
 
@@ -118,15 +116,13 @@ def test_generate_personalized_recommendations_unit():
         'Sleep_Hours_Per_Night': 7.5,
         'Avg_Daily_Usage_Hours': 2.0,
         'Daily_Unlocks': 40,
-        'Physical_Activity_Hours': 1.0,
-        'Study_Hours': 5.0,
+        'Physical_Activity_Hours': 2.0,
+        'Study_Hours': 2.8,
     }
     result_low = generate_personalized_recommendations(good_input, 'Low', 0)
     assert result_low['risk_level'] == 'Low'
-    assert 'Balanced' in result_low['cluster_insight']
-    # Only cluster tips — all Low priority
-    flagged_categories = {a['category'] for a in result_low['actions'] if a['category'] != 'Lifestyle Tip'}
-    assert len(flagged_categories) == 0
+    assert len(result_low['actions']) == 1
+    assert result_low['actions'][0]['category'] == 'Routine balance'
 
 
 def test_unseen_platform_warns_without_breaking_inference(trained):
